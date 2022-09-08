@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <title>ATM</title>
+</head>
+<body>
+    <div id="inputWindow">
+        <h1>ATM</h1>
+        <form action="/HomePage.html" id="form" method="get" onsubmit="prevent()">
+        <div id="error"></div>
+        <label for="ime">Unesite ime</label> 
+        <input type="text" id="ime" name="ime">
+        <label for="prezime">Unesite prezime</label> 
+        <input type="text" id="prezime" name="prezime">
+        <label for="jmbg">Unesite JMBG</label> 
+        <input type="text" id="jmbg" name="jmbg">
+        <select name="banka" id="banka">
+            <option value="0">Bank Of America</option>
+            <option value="1">Bank Of Tuzla</option>
+            <option value="2">Bank Of Boston</option>
+        </select>
+        <button type = "submit" onclick="takeInput()">Submit</button>
+        </form>
+    </div>
+    <script src="/index.js"></script>
+</body>
+</html>

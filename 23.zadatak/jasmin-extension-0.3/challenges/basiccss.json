@@ -1,0 +1,356 @@
+[
+  {
+    "section": "Basic Css",
+    "name": "Change The Color Of Text",
+    "url": "https://www.freecodecamp.org/learn/responsive-web-design/basic-css/change-the-color-of-text",
+    "remove": ["ALL_HELPERS"],
+    "description": "\n<p>Now let's change the color of some of our text.</p>\n<p>We can do this by changing the <code>style</code> of your <code>h2</code> element.</p>\n<p>The property that is responsible for the color of an element's text is the <code>color</code> style property.</p>\n<p>Here's how you would set your <code>h2</code> element's text color to blue:</p>\n<pre class=\"language-html\" tabindex=\"0\"><code class=\"language-html\"><span class=\"token tag\"><span class=\"token tag\"><span class=\"token punctuation\">&lt;</span>h2</span> <span class=\"token special-attr\"><span class=\"token attr-name\">style</span><span class=\"token attr-value\"><span class=\"token punctuation attr-equals\">=</span><span class=\"token punctuation\">\"</span><span class=\"token value css language-css\"><span class=\"token property\">color</span><span class=\"token punctuation\">:</span> blue<span class=\"token punctuation\">;</span></span><span class=\"token punctuation\">\"</span></span></span><span class=\"token punctuation\">&gt;</span></span>CatPhotoApp<span class=\"token tag\"><span class=\"token tag\"><span class=\"token punctuation\">&lt;/</span>h2</span><span class=\"token punctuation\">&gt;</span></span>\n</code></pre>\n<p>Note that it is a good practice to end inline <code>style</code> declarations with a <code>;</code> .</p>\n",
+    "instructions": "\n<p>Change your <code>h2</code> element's style so that its text color is red.</p>\n"
+  },
+  {
+    "section": "Basic Css",
+    "name": "Use Css Selectors To Style Elements",
+    "url": "https://www.freecodecamp.org/learn/responsive-web-design/basic-css/use-css-selectors-to-style-elements",
+    "remove": ["ALL_HELPERS"],
+    "description": "\n<p>With CSS, there are hundreds of CSS properties that you can use to change the way an element looks on your page.</p>\n<p>When you entered <code>&lt;h2 style=\"color: red;\"&gt;CatPhotoApp&lt;/h2&gt;</code>, you were styling that individual <code>h2</code> element with inline CSS, which stands for Cascading Style Sheets.</p>\n<p>That's one way to specify the style of an element, but there's a better way to apply CSS.</p>\n<p>At the top of your code, create a <code>style</code> block like this:</p>\n<pre class=\"language-html\" tabindex=\"0\"><code class=\"language-html\"><span class=\"token tag\"><span class=\"token tag\"><span class=\"token punctuation\">&lt;</span>style</span><span class=\"token punctuation\">&gt;</span></span><span class=\"token style\"><span class=\"token language-css\">\n</span></span><span class=\"token tag\"><span class=\"token tag\"><span class=\"token punctuation\">&lt;/</span>style</span><span class=\"token punctuation\">&gt;</span></span>\n</code></pre>\n<p>Inside that style block, you can create a <dfn>CSS selector</dfn> for all <code>h2</code> elements. For example, if you wanted all <code>h2</code> elements to be red, you would add a style rule that looks like this:</p>\n<pre class=\"language-html\" tabindex=\"0\"><code class=\"language-html\"><span class=\"token tag\"><span class=\"token tag\"><span class=\"token punctuation\">&lt;</span>style</span><span class=\"token punctuation\">&gt;</span></span><span class=\"token style\"><span class=\"token language-css\">\n  <span class=\"token selector\">h2</span> <span class=\"token punctuation\">{</span>\n    <span class=\"token property\">color</span><span class=\"token punctuation\">:</span> red<span class=\"token punctuation\">;</span>\n  <span class=\"token punctuation\">}</span>\n</span></span><span class=\"token tag\"><span class=\"token tag\"><span class=\"token punctuation\">&lt;/</span>style</span><span class=\"token punctuation\">&gt;</span></span>\n</code></pre>\n<p>Note that it's important to have both opening and closing curly braces (<code>{</code> and <code>}</code>) around each element's style rule(s). You also need to make sure that your element's style definition is between the opening and closing style tags. Finally, be sure to add a semicolon to the end of each of your element's style rules.</p>\n",
+    "instructions": "\n<p>Delete your <code>h2</code> element's style attribute, and instead create a CSS <code>style</code> block. Add the necessary CSS to turn all <code>h2</code> elements blue.</p>\n"
+  },
+  {
+    "section": "Basic Css",
+    "name": "Use A Css Class To Style An Element",
+    "url": "https://www.freecodecamp.org/learn/responsive-web-design/basic-css/use-a-css-class-to-style-an-element",
+    "remove": ["ALL_HELPERS"],
+    "description": "\n<p>Classes are reusable styles that can be added to HTML elements.</p>\n<p>Here's an example CSS class declaration:</p>\n<pre class=\"language-html\" tabindex=\"0\"><code class=\"language-html\"><span class=\"token tag\"><span class=\"token tag\"><span class=\"token punctuation\">&lt;</span>style</span><span class=\"token punctuation\">&gt;</span></span><span class=\"token style\"><span class=\"token language-css\">\n  <span class=\"token selector\">.blue-text</span> <span class=\"token punctuation\">{</span>\n    <span class=\"token property\">color</span><span class=\"token punctuation\">:</span> blue<span class=\"token punctuation\">;</span>\n  <span class=\"token punctuation\">}</span>\n</span></span><span class=\"token tag\"><span class=\"token tag\"><span class=\"token punctuation\">&lt;/</span>style</span><span class=\"token punctuation\">&gt;</span></span>\n</code></pre>\n<p>You can see that we've created a CSS class called <code>blue-text</code> within the <code>&lt;style&gt;</code> tag. You can apply a class to an HTML element like this: <code>&lt;h2 class=\"blue-text\"&gt;CatPhotoApp&lt;/h2&gt;</code>. Note that in your CSS <code>style</code> element, class names start with a period. In your HTML elements' class attribute, the class name does not include the period.</p>\n",
+    "instructions": "\n<p>Inside your <code>style</code> element, change the <code>h2</code> selector to <code>.red-text</code> and update the color's value from <code>blue</code> to <code>red</code>.</p>\n<p>Give your <code>h2</code> element the <code>class</code> attribute with a value of <code>red-text</code>.</p>\n"
+  },
+  {
+    "section": "Basic Css",
+    "name": "Style Multiple Elements With A Css Class",
+    "url": "https://www.freecodecamp.org/learn/responsive-web-design/basic-css/style-multiple-elements-with-a-css-class",
+    "remove": ["ALL_HELPERS"],
+    "description": "\n<p>Classes allow you to use the same CSS styles on multiple HTML elements. You can see this by applying your <code>red-text</code> class to the first <code>p</code> element.</p>\n"
+  },
+  {
+    "section": "Basic Css",
+    "name": "Change The Font Size Of An Element",
+    "url": "https://www.freecodecamp.org/learn/responsive-web-design/basic-css/change-the-font-size-of-an-element",
+    "remove": ["ALL_HELPERS"],
+    "description": "\n<p>Font size is controlled by the <code>font-size</code> CSS property, like this:</p>\n<pre class=\"language-css\" tabindex=\"0\"><code class=\"language-css\"><span class=\"token selector\">h1</span> <span class=\"token punctuation\">{</span>\n  <span class=\"token property\">font-size</span><span class=\"token punctuation\">:</span> 30px<span class=\"token punctuation\">;</span>\n<span class=\"token punctuation\">}</span>\n</code></pre>\n",
+    "instructions": "\n<p>Inside the same <code>&lt;style&gt;</code> tag that contains your <code>red-text</code> class, create an entry for <code>p</code> elements and set the <code>font-size</code> to 16 pixels (<code>16px</code>).</p>\n"
+  },
+  {
+    "section": "Basic Css",
+    "name": "Set The Font Family Of An Element",
+    "url": "https://www.freecodecamp.org/learn/responsive-web-design/basic-css/set-the-font-family-of-an-element",
+    "remove": ["ALL_HELPERS"],
+    "description": "\n<p>You can set which font an element should use, by using the <code>font-family</code> property.</p>\n<p>For example, if you wanted to set your <code>h2</code> element's font to <code>sans-serif</code>, you would use the following CSS:</p>\n<pre class=\"language-css\" tabindex=\"0\"><code class=\"language-css\"><span class=\"token selector\">h2</span> <span class=\"token punctuation\">{</span>\n  <span class=\"token property\">font-family</span><span class=\"token punctuation\">:</span> sans-serif<span class=\"token punctuation\">;</span>\n<span class=\"token punctuation\">}</span>\n</code></pre>\n",
+    "instructions": "\n<p>Make all of your <code>p</code> elements use the <code>monospace</code> font.</p>\n"
+  },
+  {
+    "section": "Basic Css",
+    "name": "Import A Google Font",
+    "url": "https://www.freecodecamp.org/learn/responsive-web-design/basic-css/import-a-google-font",
+    "remove": ["ALL_HELPERS"],
+    "add": [
+      "<pre class=\"language-html\" tabindex=\"0\"><code class=\"language-html\"><span class=\"token tag\"><span class=\"token tag\"><span class=\"token punctuation\">&lt;</span>link</span> <span class=\"token attr-name\">href</span><span class=\"token attr-value\"><span class=\"token punctuation attr-equals\">=</span><span class=\"token punctuation\">\"</span>https://fonts.googleapis.com/css?family=Lobster<span class=\"token punctuation\">\"</span></span> <span class=\"token attr-name\">rel</span><span class=\"token attr-value\"><span class=\"token punctuation attr-equals\">=</span><span class=\"token punctuation\">\"</span>stylesheet<span class=\"token punctuation\">\"</span></span> <span class=\"token attr-name\">type</span><span class=\"token attr-value\"><span class=\"token punctuation attr-equals\">=</span><span class=\"token punctuation\">\"</span>text/css<span class=\"token punctuation\">\"</span></span><span class=\"token punctuation\">&gt;</span></span></code></pre>"
+    ],
+    "description": "\n<p>In addition to specifying common fonts that are found on most operating systems, we can also specify non-standard, custom web fonts for use on our website. There are many sources for web fonts on the Internet. For this example we will focus on the Google Fonts library.</p>\n<p><a href=\"https://fonts.google.com/\">Google Fonts</a> is a free library of web fonts that you can use in your CSS by referencing the font's URL.</p>\n<p>So, let's go ahead and import and apply a Google font (note that if Google is blocked in your country, you will need to skip this challenge).</p>\n<p>To import a Google Font, you can copy the font's URL from the Google Fonts library and then paste it in your HTML. For this challenge, we'll import the <code>Lobster</code> font. To do this, copy the following code snippet and paste it into the top of your code editor (before the opening <code>style</code> element):</p>\n<pre class=\"language-html\" tabindex=\"0\"><code class=\"language-html\"><span class=\"token tag\"><span class=\"token tag\"><span class=\"token punctuation\">&lt;</span>link</span> <span class=\"token attr-name\">href</span><span class=\"token attr-value\"><span class=\"token punctuation attr-equals\">=</span><span class=\"token punctuation\">\"</span>https://fonts.googleapis.com/css?family=Lobster<span class=\"token punctuation\">\"</span></span> <span class=\"token attr-name\">rel</span><span class=\"token attr-value\"><span class=\"token punctuation attr-equals\">=</span><span class=\"token punctuation\">\"</span>stylesheet<span class=\"token punctuation\">\"</span></span> <span class=\"token attr-name\">type</span><span class=\"token attr-value\"><span class=\"token punctuation attr-equals\">=</span><span class=\"token punctuation\">\"</span>text/css<span class=\"token punctuation\">\"</span></span><span class=\"token punctuation\">&gt;</span></span>\n</code></pre>\n<p>Now you can use the <code>Lobster</code> font in your CSS by using <code>Lobster</code> as the FAMILY_NAME as in the following example:</p>\n<pre class=\"language-css\" tabindex=\"0\"><code class=\"language-css\"><span class=\"token property\">font-family</span><span class=\"token punctuation\">:</span> FAMILY_NAME<span class=\"token punctuation\">,</span> GENERIC_NAME<span class=\"token punctuation\">;</span>\n</code></pre>\n<p>The GENERIC_NAME is optional, and is a fallback font in case the other specified font is not available. This is covered in the next challenge.</p>\n<p>Family names are case-sensitive and need to be wrapped in quotes if there is a space in the name. For example, you need quotes to use the <code>\"Open Sans\"</code> font, but not to use the <code>Lobster</code> font.</p>\n",
+    "instructions": "\n<p>Import the <code>Lobster</code> font to your web page. Then, use an element selector to set <code>Lobster</code> as the <code>font-family</code> for your <code>h2</code> element.</p>\n"
+  },
+  {
+    "section": "Basic Css",
+    "name": "Specify How Fonts Should Degrade",
+    "url": "https://www.freecodecamp.org/learn/responsive-web-design/basic-css/specify-how-fonts-should-degrade",
+    "remove": ["ALL_HELPERS"],
+    "description": "\n<p>There are several default fonts that are available in all browsers. These generic font families include <code>monospace</code>, <code>serif</code> and <code>sans-serif</code>.</p>\n<p>When one font isn't available, you can tell the browser to \"degrade\" to another font.</p>\n<p>For example, if you wanted an element to use the <code>Helvetica</code> font, but degrade to the <code>sans-serif</code> font when <code>Helvetica</code> isn't available, you will specify it as follows:</p>\n<pre class=\"language-css\" tabindex=\"0\"><code class=\"language-css\"><span class=\"token selector\">p</span> <span class=\"token punctuation\">{</span>\n  <span class=\"token property\">font-family</span><span class=\"token punctuation\">:</span> Helvetica<span class=\"token punctuation\">,</span> sans-serif<span class=\"token punctuation\">;</span>\n<span class=\"token punctuation\">}</span>\n</code></pre>\n<p>Generic font family names are not case-sensitive. Also, they do not need quotes because they are CSS keywords.</p>\n",
+    "instructions": "\n<p>To begin, apply the <code>monospace</code> font to the <code>h2</code> element, so that it now has two fonts - <code>Lobster</code> and <code>monospace</code>.</p>\n<p>In the last challenge, you imported the <code>Lobster</code> font using the <code>link</code> tag. Now comment out that import of the <code>Lobster</code> font (using the HTML comments you learned before) from Google Fonts so that it isn't available anymore. Notice how your <code>h2</code> element degrades to the <code>monospace</code> font.</p>\n<p><strong>Note:</strong> If you have the <code>Lobster</code> font installed on your computer, you won't see the degradation because your browser is able to find the font.</p>\n"
+  },
+  {
+    "section": "Basic Css",
+    "name": "Size Your Images",
+    "url": "https://www.freecodecamp.org/learn/responsive-web-design/basic-css/size-your-images",
+    "remove": ["ALL_HELPERS"],
+    "description": "\n<p>CSS has a property called <code>width</code> that controls an element's width. Just like with fonts, we'll use <code>px</code> (pixels) to specify the image's width.</p>\n<p>For example, if we wanted to create a CSS class called <code>larger-image</code> that gave HTML elements a width of 500 pixels, we'd use:</p>\n<pre class=\"language-html\" tabindex=\"0\"><code class=\"language-html\"><span class=\"token tag\"><span class=\"token tag\"><span class=\"token punctuation\">&lt;</span>style</span><span class=\"token punctuation\">&gt;</span></span><span class=\"token style\"><span class=\"token language-css\">\n  <span class=\"token selector\">.larger-image</span> <span class=\"token punctuation\">{</span>\n    <span class=\"token property\">width</span><span class=\"token punctuation\">:</span> 500px<span class=\"token punctuation\">;</span>\n  <span class=\"token punctuation\">}</span>\n</span></span><span class=\"token tag\"><span class=\"token tag\"><span class=\"token punctuation\">&lt;/</span>style</span><span class=\"token punctuation\">&gt;</span></span>\n</code></pre>\n",
+    "instructions": "\n<p>Create a class called <code>smaller-image</code> and use it to resize the image so that it's only 100 pixels wide.</p>\n"
+  },
+  {
+    "section": "Basic Css",
+    "name": "Add Borders Around Your Elements",
+    "url": "https://www.freecodecamp.org/learn/responsive-web-design/basic-css/add-borders-around-your-elements",
+    "remove": ["ALL_HELPERS"],
+    "description": "\n<p>CSS borders have properties like <code>style</code>, <code>color</code> and <code>width</code>.</p>\n<p>For example, if we wanted to create a red, 5 pixel border around an HTML element, we could use this class:</p>\n<pre class=\"language-html\" tabindex=\"0\"><code class=\"language-html\"><span class=\"token tag\"><span class=\"token tag\"><span class=\"token punctuation\">&lt;</span>style</span><span class=\"token punctuation\">&gt;</span></span><span class=\"token style\"><span class=\"token language-css\">\n  <span class=\"token selector\">.thin-red-border</span> <span class=\"token punctuation\">{</span>\n    <span class=\"token property\">border-color</span><span class=\"token punctuation\">:</span> red<span class=\"token punctuation\">;</span>\n    <span class=\"token property\">border-width</span><span class=\"token punctuation\">:</span> 5px<span class=\"token punctuation\">;</span>\n    <span class=\"token property\">border-style</span><span class=\"token punctuation\">:</span> solid<span class=\"token punctuation\">;</span>\n  <span class=\"token punctuation\">}</span>\n</span></span><span class=\"token tag\"><span class=\"token tag\"><span class=\"token punctuation\">&lt;/</span>style</span><span class=\"token punctuation\">&gt;</span></span>\n</code></pre>\n",
+    "instructions": "\n<p>Create a class called <code>thick-green-border</code>. This class should add a 10px, solid, green border around an HTML element. Apply the class to your cat photo.</p>\n<p>Remember that you can apply multiple classes to an element using its <code>class</code> attribute, by separating each class name with a space. For example:</p>\n<pre class=\"language-html\" tabindex=\"0\"><code class=\"language-html\"><span class=\"token tag\"><span class=\"token tag\"><span class=\"token punctuation\">&lt;</span>img</span> <span class=\"token attr-name\">class</span><span class=\"token attr-value\"><span class=\"token punctuation attr-equals\">=</span><span class=\"token punctuation\">\"</span>class1 class2<span class=\"token punctuation\">\"</span></span><span class=\"token punctuation\">&gt;</span></span>\n</code></pre>\n"
+  },
+  {
+    "section": "Basic Css",
+    "name": "Add Rounded Corners With Border Radius",
+    "url": "https://www.freecodecamp.org/learn/responsive-web-design/basic-css/add-rounded-corners-with-border-radius",
+    "remove": ["ALL_HELPERS"],
+    "description": "\n<p>Your cat photo currently has sharp corners. We can round out those corners with a CSS property called <code>border-radius</code>.</p>\n",
+    "instructions": "\n<p>You can specify a <code>border-radius</code> with pixels. Give your cat photo a <code>border-radius</code> of <code>10px</code>.</p>\n<p><strong>Note:</strong> This challenge allows for multiple possible solutions. For example, you may add <code>border-radius</code> to either the <code>.thick-green-border</code> class or the <code>.smaller-image</code> class.</p>\n"
+  },
+  {
+    "section": "Basic Css",
+    "name": "Make Circular Images With A Border Radius",
+    "url": "https://www.freecodecamp.org/learn/responsive-web-design/basic-css/make-circular-images-with-a-border-radius",
+    "remove": ["ALL_HELPERS"],
+    "description": "\n<p>In addition to pixels, you can also specify the <code>border-radius</code> using a percentage.</p>\n",
+    "instructions": "\n<p>Give your cat photo a <code>border-radius</code> of <code>50%</code>.</p>\n"
+  },
+  {
+    "section": "Basic Css",
+    "name": "Give A Background Color To A Div Element",
+    "url": "https://www.freecodecamp.org/learn/responsive-web-design/basic-css/give-a-background-color-to-a-div-element",
+    "remove": ["ALL_HELPERS"],
+    "description": "\n<p>You can set an element's background color with the <code>background-color</code> property.</p>\n<p>For example, if you wanted an element's background color to be <code>green</code>, you'd put this within your <code>style</code> element:</p>\n<pre class=\"language-css\" tabindex=\"0\"><code class=\"language-css\"><span class=\"token selector\">.green-background</span> <span class=\"token punctuation\">{</span>\n  <span class=\"token property\">background-color</span><span class=\"token punctuation\">:</span> green<span class=\"token punctuation\">;</span>\n<span class=\"token punctuation\">}</span>\n</code></pre>\n",
+    "instructions": "\n<p>Create a class called <code>silver-background</code> with the <code>background-color</code> of <code>silver</code>. Assign this class to your <code>div</code> element.</p>\n"
+  },
+  {
+    "section": "Basic Css",
+    "name": "Set The Id Of An Element",
+    "url": "https://www.freecodecamp.org/learn/responsive-web-design/basic-css/set-the-id-of-an-element",
+    "remove": ["ALL_HELPERS"],
+    "description": "\n<p>In addition to classes, each HTML element can also have an <code>id</code> attribute.</p>\n<p>There are several benefits to using <code>id</code> attributes: You can use an <code>id</code> to style a single element and later you'll learn that you can use them to select and modify specific elements with JavaScript.</p>\n<p><code>id</code> attributes should be unique. Browsers won't enforce this, but it is a widely agreed upon best practice. So please don't give more than one element the same <code>id</code> attribute.</p>\n<p>Here's an example of how you give your <code>h2</code> element the id of <code>cat-photo-app</code>:</p>\n<pre class=\"language-html\" tabindex=\"0\"><code class=\"language-html\"><span class=\"token tag\"><span class=\"token tag\"><span class=\"token punctuation\">&lt;</span>h2</span> <span class=\"token attr-name\">id</span><span class=\"token attr-value\"><span class=\"token punctuation attr-equals\">=</span><span class=\"token punctuation\">\"</span>cat-photo-app<span class=\"token punctuation\">\"</span></span><span class=\"token punctuation\">&gt;</span></span>\n</code></pre>\n",
+    "instructions": "\n<p>Give your <code>form</code> element the id <code>cat-photo-form</code>.</p>\n"
+  },
+  {
+    "section": "Basic Css",
+    "name": "Use An Id Attribute To Style An Element",
+    "url": "https://www.freecodecamp.org/learn/responsive-web-design/basic-css/use-an-id-attribute-to-style-an-element",
+    "remove": ["ALL_HELPERS"],
+    "description": "\n<p>One cool thing about <code>id</code> attributes is that, like classes, you can style them using CSS.</p>\n<p>However, an <code>id</code> is not reusable and should only be applied to one element. An <code>id</code> also has a higher specificity (importance) than a class so if both are applied to the same element and have conflicting styles, the styles of the <code>id</code> will be applied.</p>\n<p>Here's an example of how you can take your element with the <code>id</code> attribute of <code>cat-photo-element</code> and give it the background color of green. In your <code>style</code> element:</p>\n<pre class=\"language-css\" tabindex=\"0\"><code class=\"language-css\"><span class=\"token selector\">#cat-photo-element</span> <span class=\"token punctuation\">{</span>\n  <span class=\"token property\">background-color</span><span class=\"token punctuation\">:</span> green<span class=\"token punctuation\">;</span>\n<span class=\"token punctuation\">}</span>\n</code></pre>\n<p>Note that inside your <code>style</code> element, you always reference classes by putting a <code>.</code> in front of their names. You always reference ids by putting a <code>#</code> in front of their names.</p>\n",
+    "instructions": "\n<p>Try giving your form, which now has the <code>id</code> attribute of <code>cat-photo-form</code>, a green background.</p>\n"
+  },
+  {
+    "section": "Basic Css",
+    "name": "Adjust The Padding Of An Element",
+    "url": "https://www.freecodecamp.org/learn/responsive-web-design/basic-css/adjust-the-padding-of-an-element",
+    "remove": ["ALL_HELPERS"],
+    "description": "\n<p>Now let's put our Cat Photo App away for a little while and learn more about styling HTML.</p>\n<p>You may have already noticed this, but all HTML elements are essentially little rectangles.</p>\n<p>Three important properties control the space that surrounds each HTML element: <code>padding</code>, <code>border</code>, and <code>margin</code>.</p>\n<p>An element's <code>padding</code> controls the amount of space between the element's content and its <code>border</code>.</p>\n<p>Here, we can see that the blue box and the red box are nested within the yellow box. Note that the red box has more <code>padding</code> than the blue box.</p>\n<p>When you increase the blue box's <code>padding</code>, it will increase the distance (<code>padding</code>) between the text and the border around it.</p>\n",
+    "instructions": "\n<p>Change the <code>padding</code> of your blue box to match that of your red box.</p>\n"
+  },
+  {
+    "section": "Basic Css",
+    "name": "Adjust The Margin Of An Element",
+    "url": "https://www.freecodecamp.org/learn/responsive-web-design/basic-css/adjust-the-margin-of-an-element",
+    "remove": ["ALL_HELPERS"],
+    "description": "\n<p>An element's <code>margin</code> controls the amount of space between an element's <code>border</code> and surrounding elements.</p>\n<p>Here, we can see that the blue box and the red box are nested within the yellow box. Note that the red box has a bigger <code>margin</code> than the blue box, making it appear smaller.</p>\n<p>When you increase the blue box's <code>margin</code>, it will increase the distance between its border and surrounding elements.</p>\n",
+    "instructions": "\n<p>Change the <code>margin</code> of the blue box to match that of the red box.</p>\n"
+  },
+  {
+    "section": "Basic Css",
+    "name": "Add A Negative Margin To An Element",
+    "url": "https://www.freecodecamp.org/learn/responsive-web-design/basic-css/add-a-negative-margin-to-an-element",
+    "remove": ["ALL_HELPERS"],
+    "description": "\n<p>An element's <code>margin</code> controls the amount of space between an element's <code>border</code> and surrounding elements.</p>\n<p>If you set an element's <code>margin</code> to a negative value, the element will grow larger.</p>\n",
+    "instructions": "\n<p>Try to set the <code>margin</code> to a negative value like the one for the red box.</p>\n<p>Change the <code>margin</code> of the blue box to <code>-15px</code>, so it fills the entire horizontal width of the yellow box around it.</p>\n"
+  },
+  {
+    "section": "Basic Css",
+    "name": "Add Different Padding To Each Side Of An Element",
+    "url": "https://www.freecodecamp.org/learn/responsive-web-design/basic-css/add-different-padding-to-each-side-of-an-element",
+    "remove": ["ALL_HELPERS"],
+    "description": "\n<p>Sometimes you will want to customize an element so that it has different amounts of <code>padding</code> on each of its sides.</p>\n<p>CSS allows you to control the <code>padding</code> of all four individual sides of an element with the <code>padding-top</code>, <code>padding-right</code>, <code>padding-bottom</code>, and <code>padding-left</code> properties.</p>\n",
+    "instructions": "\n<p>Give the blue box a <code>padding</code> of <code>40px</code> on its top and left side, but only <code>20px</code> on its bottom and right side.</p>\n"
+  },
+  {
+    "section": "Basic Css",
+    "name": "Add Different Margins To Each Side Of An Element",
+    "url": "https://www.freecodecamp.org/learn/responsive-web-design/basic-css/add-different-margins-to-each-side-of-an-element",
+    "remove": ["ALL_HELPERS"],
+    "description": "\n<p>Sometimes you will want to customize an element so that it has a different <code>margin</code> on each of its sides.</p>\n<p>CSS allows you to control the <code>margin</code> of all four individual sides of an element with the <code>margin-top</code>, <code>margin-right</code>, <code>margin-bottom</code>, and <code>margin-left</code> properties.</p>\n",
+    "instructions": "\n<p>Give the blue box a <code>margin</code> of <code>40px</code> on its top and left side, but only <code>20px</code> on its bottom and right side.</p>\n"
+  },
+  {
+    "section": "Basic Css",
+    "name": "Use Clockwise Notation To Specify The Padding Of An Element",
+    "url": "https://www.freecodecamp.org/learn/responsive-web-design/basic-css/use-clockwise-notation-to-specify-the-padding-of-an-element",
+    "remove": ["ALL_HELPERS"],
+    "description": "\n<p>Instead of specifying an element's <code>padding-top</code>, <code>padding-right</code>, <code>padding-bottom</code>, and <code>padding-left</code> properties individually, you can specify them all in one line, like this:</p>\n<pre class=\"language-css\" tabindex=\"0\"><code class=\"language-css\"><span class=\"token property\">padding</span><span class=\"token punctuation\">:</span> 10px 20px 10px 20px<span class=\"token punctuation\">;</span>\n</code></pre>\n<p>These four values work like a clock: top, right, bottom, left, and will produce the exact same result as using the side-specific padding instructions.</p>\n",
+    "instructions": "\n<p>Use Clockwise Notation to give the <code>.blue-box</code> class a <code>padding</code> of <code>40px</code> on its top and left side, but only <code>20px</code> on its bottom and right side.</p>\n"
+  },
+  {
+    "section": "Basic Css",
+    "name": "Use Clockwise Notation To Specify The Margin Of An Element",
+    "url": "https://www.freecodecamp.org/learn/responsive-web-design/basic-css/use-clockwise-notation-to-specify-the-margin-of-an-element",
+    "remove": ["ALL_HELPERS"],
+    "description": "\n<p>Let's try this again, but with <code>margin</code> this time.</p>\n<p>Instead of specifying an element's <code>margin-top</code>, <code>margin-right</code>, <code>margin-bottom</code>, and <code>margin-left</code> properties individually, you can specify them all in one line, like this:</p>\n<pre class=\"language-css\" tabindex=\"0\"><code class=\"language-css\"><span class=\"token property\">margin</span><span class=\"token punctuation\">:</span> 10px 20px 10px 20px<span class=\"token punctuation\">;</span>\n</code></pre>\n<p>These four values work like a clock: top, right, bottom, left, and will produce the exact same result as using the side-specific margin instructions.</p>\n",
+    "instructions": "\n<p>Use Clockwise Notation to give the element with the <code>blue-box</code> class a margin of <code>40px</code> on its top and left side, but only <code>20px</code> on its bottom and right side.</p>\n"
+  },
+  {
+    "section": "Basic Css",
+    "name": "Use Attribute Selectors To Style Elements",
+    "url": "https://www.freecodecamp.org/learn/responsive-web-design/basic-css/use-attribute-selectors-to-style-elements",
+    "remove": ["ALL_HELPERS"],
+    "description": "\n<p>You have been adding <code>id</code> or <code>class</code> attributes to elements that you wish to specifically style. These are known as ID and class selectors. There are other CSS Selectors you can use to select custom groups of elements to style.</p>\n<p>Let's bring out CatPhotoApp again to practice using CSS Selectors.</p>\n<p>For this challenge, you will use the <code>[attr=value]</code> attribute selector to style the checkboxes in CatPhotoApp. This selector matches and styles elements with a specific attribute value. For example, the below code changes the margins of all elements with the attribute <code>type</code> and a corresponding value of <code>radio</code>:</p>\n<pre class=\"language-css\" tabindex=\"0\"><code class=\"language-css\"><span class=\"token selector\">[type='radio']</span> <span class=\"token punctuation\">{</span>\n  <span class=\"token property\">margin</span><span class=\"token punctuation\">:</span> 20px 0px 20px 0px<span class=\"token punctuation\">;</span>\n<span class=\"token punctuation\">}</span>\n</code></pre>\n",
+    "instructions": "\n<p>Using the <code>type</code> attribute selector, try to give the checkboxes in CatPhotoApp a top margin of 10px and a bottom margin of 15px.</p>\n"
+  },
+  {
+    "section": "Basic Css",
+    "name": "Understand Absolute Versus Relative Units",
+    "url": "https://www.freecodecamp.org/learn/responsive-web-design/basic-css/understand-absolute-versus-relative-units",
+    "remove": ["ALL_HELPERS"],
+    "description": "\n<p>The last several challenges all set an element's margin or padding with pixels (<code>px</code>). Pixels are a type of length unit, which is what tells the browser how to size or space an item. In addition to <code>px</code>, CSS has a number of different length unit options that you can use.</p>\n<p>The two main types of length units are absolute and relative. Absolute units tie to physical units of length. For example, <code>in</code> and <code>mm</code> refer to inches and millimeters, respectively. Absolute length units approximate the actual measurement on a screen, but there are some differences depending on a screen's resolution.</p>\n<p>Relative units, such as <code>em</code> or <code>rem</code>, are relative to another length value. For example, <code>em</code> is based on the size of an element's font. If you use it to set the <code>font-size</code> property itself, it's relative to the parent's <code>font-size</code>.</p>\n<p><strong>Note:</strong> There are several relative unit options that are tied to the size of the viewport. They are covered in the Responsive Web Design Principles section.</p>\n",
+    "instructions": "\n<p>Add a <code>padding</code> property to the element with class <code>red-box</code> and set it to <code>1.5em</code>.</p>\n"
+  },
+  {
+    "section": "Basic Css",
+    "name": "Style The Html Body Element",
+    "url": "https://www.freecodecamp.org/learn/responsive-web-design/basic-css/style-the-html-body-element",
+    "remove": ["ALL_HELPERS"],
+    "description": "\n<p>Now let's start fresh and talk about CSS inheritance.</p>\n<p>Every HTML page has a <code>body</code> element.</p>\n",
+    "instructions": "\n<p>We can prove that the <code>body</code> element exists here by giving it a <code>background-color</code> of black.</p>\n<p>We can do this by adding the following to our <code>style</code> element:</p>\n<pre class=\"language-css\" tabindex=\"0\"><code class=\"language-css\"><span class=\"token selector\">body</span> <span class=\"token punctuation\">{</span>\n  <span class=\"token property\">background-color</span><span class=\"token punctuation\">:</span> black<span class=\"token punctuation\">;</span>\n<span class=\"token punctuation\">}</span>\n</code></pre>\n"
+  },
+  {
+    "section": "Basic Css",
+    "name": "Inherit Styles From The Body Element",
+    "url": "https://www.freecodecamp.org/learn/responsive-web-design/basic-css/inherit-styles-from-the-body-element",
+    "remove": ["ALL_HELPERS"],
+    "description": "\n<p>Now we've proven that every HTML page has a <code>body</code> element, and that its <code>body</code> element can also be styled with CSS.</p>\n<p>Remember, you can style your <code>body</code> element just like any other HTML element, and all your other elements will inherit your <code>body</code> element's styles.</p>\n",
+    "instructions": "\n<p>First, create a <code>h1</code> element with the text <code>Hello World</code></p>\n<p>Then, let's give all elements on your page the color of <code>green</code> by adding <code>color: green;</code> to your <code>body</code> element's style declaration.</p>\n<p>Finally, give your <code>body</code> element the font-family of <code>monospace</code> by adding <code>font-family: monospace;</code> to your <code>body</code> element's style declaration.</p>\n"
+  },
+  {
+    "section": "Basic Css",
+    "name": "Prioritize One Style Over Another",
+    "url": "https://www.freecodecamp.org/learn/responsive-web-design/basic-css/prioritize-one-style-over-another",
+    "remove": ["ALL_HELPERS"],
+    "description": "\n<p>Sometimes your HTML elements will receive multiple styles that conflict with one another.</p>\n<p>For example, your <code>h1</code> element can't be both green and pink at the same time.</p>\n<p>Let's see what happens when we create a class that makes text pink, then apply it to an element. Will our class <em>override</em> the <code>body</code> element's <code>color: green;</code> CSS property?</p>\n",
+    "instructions": "\n<p>Create a CSS class called <code>pink-text</code> that gives an element the color pink.</p>\n<p>Give your <code>h1</code> element the class of <code>pink-text</code>.</p>\n"
+  },
+  {
+    "section": "Basic Css",
+    "name": "Override Styles In Subsequent Css",
+    "url": "https://www.freecodecamp.org/learn/responsive-web-design/basic-css/override-styles-in-subsequent-css",
+    "remove": ["ALL_HELPERS"],
+    "description": "\n<p>Our <code>pink-text</code> class overrode our <code>body</code> element's CSS declaration!</p>\n<p>We just proved that our classes will override the <code>body</code> element's CSS. So the next logical question is, what can we do to override our <code>pink-text</code> class?</p>\n",
+    "instructions": "\n<p>Create an additional CSS class called <code>blue-text</code> that gives an element the color blue. Make sure it's below your <code>pink-text</code> class declaration.</p>\n<p>Apply the <code>blue-text</code> class to your <code>h1</code> element in addition to your <code>pink-text</code> class, and let's see which one wins.</p>\n<p>Applying multiple class attributes to a HTML element is done with a space between them like this:</p>\n<pre class=\"language-html\" tabindex=\"0\"><code class=\"language-html\">class=\"class1 class2\"\n</code></pre>\n<p><strong>Note:</strong> It doesn't matter which order the classes are listed in the HTML element.</p>\n<p>However, the order of the <code>class</code> declarations in the <code>&lt;style&gt;</code> section is what is important. The second declaration will always take precedence over the first. Because <code>.blue-text</code> is declared second, it overrides the attributes of <code>.pink-text</code></p>\n"
+  },
+  {
+    "section": "Basic Css",
+    "name": "Override Class Declarations By Styling Id Attributes",
+    "url": "https://www.freecodecamp.org/learn/responsive-web-design/basic-css/override-class-declarations-by-styling-id-attributes",
+    "remove": ["ALL_HELPERS"],
+    "description": "\n<p>We just proved that browsers read CSS from top to bottom in order of their declaration. That means that, in the event of a conflict, the browser will use whichever CSS declaration came last. Notice that if we even had put <code>blue-text</code> before <code>pink-text</code> in our <code>h1</code> element's classes, it would still look at the declaration order and not the order of their use!</p>\n<p>But we're not done yet. There are other ways that you can override CSS. Do you remember id attributes?</p>\n<p>Let's override your <code>pink-text</code> and <code>blue-text</code> classes, and make your <code>h1</code> element orange, by giving the <code>h1</code> element an id and then styling that id.</p>\n",
+    "instructions": "\n<p>Give your <code>h1</code> element the <code>id</code> attribute of <code>orange-text</code>. Remember, id styles look like this:</p>\n<pre class=\"language-html\" tabindex=\"0\"><code class=\"language-html\"><span class=\"token tag\"><span class=\"token tag\"><span class=\"token punctuation\">&lt;</span>h1</span> <span class=\"token attr-name\">id</span><span class=\"token attr-value\"><span class=\"token punctuation attr-equals\">=</span><span class=\"token punctuation\">\"</span>orange-text<span class=\"token punctuation\">\"</span></span><span class=\"token punctuation\">&gt;</span></span>\n</code></pre>\n<p>Leave the <code>blue-text</code> and <code>pink-text</code> classes on your <code>h1</code> element.</p>\n<p>Create a CSS declaration for your <code>orange-text</code> id in your <code>style</code> element. Here's an example of what this looks like:</p>\n<pre class=\"language-css\" tabindex=\"0\"><code class=\"language-css\"><span class=\"token selector\">#brown-text</span> <span class=\"token punctuation\">{</span>\n  <span class=\"token property\">color</span><span class=\"token punctuation\">:</span> brown<span class=\"token punctuation\">;</span>\n<span class=\"token punctuation\">}</span>\n</code></pre>\n<p><strong>Note:</strong> It doesn't matter whether you declare this CSS above or below <code>pink-text</code> class, since the <code>id</code> attribute will always take precedence.</p>\n"
+  },
+  {
+    "section": "Basic Css",
+    "name": "Override Class Declarations With Inline Styles",
+    "url": "https://www.freecodecamp.org/learn/responsive-web-design/basic-css/override-class-declarations-with-inline-styles",
+    "remove": ["ALL_HELPERS"],
+    "description": "\n<p>So we've proven that id declarations override class declarations, regardless of where they are declared in your <code>style</code> element CSS.</p>\n<p>There are other ways that you can override CSS. Do you remember inline styles?</p>\n",
+    "instructions": "\n<p>Use an inline style to try to make our <code>h1</code> element white. Remember, inline styles look like this:</p>\n<pre class=\"language-html\" tabindex=\"0\"><code class=\"language-html\"><span class=\"token tag\"><span class=\"token tag\"><span class=\"token punctuation\">&lt;</span>h1</span> <span class=\"token special-attr\"><span class=\"token attr-name\">style</span><span class=\"token attr-value\"><span class=\"token punctuation attr-equals\">=</span><span class=\"token punctuation\">\"</span><span class=\"token value css language-css\"><span class=\"token property\">color</span><span class=\"token punctuation\">:</span> green<span class=\"token punctuation\">;</span></span><span class=\"token punctuation\">\"</span></span></span><span class=\"token punctuation\">&gt;</span></span>\n</code></pre>\n<p>Leave the <code>blue-text</code> and <code>pink-text</code> classes on your <code>h1</code> element.</p>\n"
+  },
+  {
+    "section": "Basic Css",
+    "name": "Override All Other Styles By Using Important",
+    "url": "https://www.freecodecamp.org/learn/responsive-web-design/basic-css/override-all-other-styles-by-using-important",
+    "remove": ["ALL_HELPERS"],
+    "description": "\n<p>Yay! We just proved that inline styles will override all the CSS declarations in your <code>style</code> element.</p>\n<p>But wait. There's one last way to override CSS. This is the most powerful method of all. But before we do it, let's talk about why you would ever want to override CSS.</p>\n<p>In many situations, you will use CSS libraries. These may accidentally override your own CSS. So when you absolutely need to be sure that an element has specific CSS, you can use <code>!important</code>.</p>\n<p>Let's go all the way back to our <code>pink-text</code> class declaration. Remember that our <code>pink-text</code> class was overridden by subsequent class declarations, id declarations, and inline styles.</p>\n",
+    "instructions": "\n<p>Let's add the keyword <code>!important</code> to your pink-text element's color declaration to make 100% sure that your <code>h1</code> element will be pink.</p>\n<p>An example of how to do this is:</p>\n<pre class=\"language-css\" tabindex=\"0\"><code class=\"language-css\"><span class=\"token property\">color</span><span class=\"token punctuation\">:</span> red <span class=\"token important\">!important</span><span class=\"token punctuation\">;</span>\n</code></pre>\n"
+  },
+  {
+    "section": "Basic Css",
+    "name": "Use Hex Code For Specific Colors",
+    "url": "https://www.freecodecamp.org/learn/responsive-web-design/basic-css/use-hex-code-for-specific-colors",
+    "remove": ["ALL_HELPERS"],
+    "description": "\n<p>Did you know there are other ways to represent colors in CSS? One of these ways is called hexadecimal code, or hex code for short.</p>\n<p>We usually use <dfn>decimals</dfn>, or base 10 numbers, which use the symbols 0 to 9 for each digit. <dfn>Hexadecimals</dfn> (or <dfn>hex</dfn>) are base 16 numbers. This means it uses sixteen distinct symbols. Like decimals, the symbols 0-9 represent the values zero to nine. Then A,B,C,D,E,F represent the values ten to fifteen. Altogether, 0 to F can represent a digit in hexadecimal, giving us 16 total possible values. You can find more information about <a href=\"https://www.freecodecamp.org/news/hexadecimal-number-system/\">hexadecimal numbers here</a>.</p>\n<p>In CSS, we can use 6 hexadecimal digits to represent colors, two each for the red (R), green (G), and blue (B) components. For example, <code>#000000</code> is black and is also the lowest possible value. You can find more information about the <a href=\"https://www.freecodecamp.org/news/rgb-color-html-and-css-guide/#whatisthergbcolormodel\">RGB color system here</a>.</p>\n<pre class=\"language-css\" tabindex=\"0\"><code class=\"language-css\"><span class=\"token selector\">body</span> <span class=\"token punctuation\">{</span>\n  <span class=\"token property\">color</span><span class=\"token punctuation\">:</span> #000000<span class=\"token punctuation\">;</span>\n<span class=\"token punctuation\">}</span>\n</code></pre>\n",
+    "instructions": "\n<p>Replace the word <code>black</code> in our <code>body</code> element's background-color with its hex code representation, <code>#000000</code>.</p>\n"
+  },
+  {
+    "section": "Basic Css",
+    "name": "Use Hex Code To Mix Colors",
+    "url": "https://www.freecodecamp.org/learn/responsive-web-design/basic-css/use-hex-code-to-mix-colors",
+    "remove": ["ALL_HELPERS"],
+    "description": "\n<p>To review, hex codes use 6 hexadecimal digits to represent colors, two each for red (R), green (G), and blue (B) components.</p>\n<p>From these three pure colors (red, green, and blue), we can vary the amounts of each to create over 16 million other colors!</p>\n<p>For example, orange is pure red, mixed with some green, and no blue. In hex code, this translates to being <code>#FFA500</code>.</p>\n<p>The digit <code>0</code> is the lowest number in hex code, and represents a complete absence of color.</p>\n<p>The digit <code>F</code> is the highest number in hex code, and represents the maximum possible brightness.</p>\n",
+    "instructions": "\n<p>Replace the color words in our <code>style</code> element with their correct hex codes.</p>\n<table class=\"table table-striped\"><tbody><tr><th>Color</th><th>Hex Code</th></tr><tr><td>Dodger Blue</td><td><code>#1E90FF</code></td></tr><tr><td>Green</td><td><code>#00FF00</code></td></tr><tr><td>Orange</td><td><code>#FFA500</code></td></tr><tr><td>Red</td><td><code>#FF0000</code></td></tr></tbody></table>\n"
+  },
+  {
+    "section": "Basic Css",
+    "name": "Use Abbreviated Hex Code",
+    "url": "https://www.freecodecamp.org/learn/responsive-web-design/basic-css/use-abbreviated-hex-code",
+    "remove": ["ALL_HELPERS"],
+    "description": "\n<p>Many people feel overwhelmed by the possibilities of more than 16 million colors. And it's difficult to remember hex code. Fortunately, you can shorten it.</p>\n<p>For example, red's hex code <code>#FF0000</code> can be shortened to <code>#F00</code>. This shortened form gives one digit for red, one digit for green, and one digit for blue.</p>\n<p>This reduces the total number of possible colors to around 4,000. But browsers will interpret <code>#FF0000</code> and <code>#F00</code> as exactly the same color.</p>\n",
+    "instructions": "\n<p>Go ahead, try using the abbreviated hex codes to color the correct elements.</p>\n<table class=\"table table-striped\"><tbody><tr><th>Color</th><th>Short Hex Code</th></tr><tr><td>Cyan</td><td><code>#0FF</code></td></tr><tr><td>Green</td><td><code>#0F0</code></td></tr><tr><td>Red</td><td><code>#F00</code></td></tr><tr><td>Fuchsia</td><td><code>#F0F</code></td></tr></tbody></table>\n"
+  },
+  {
+    "section": "Basic Css",
+    "name": "Use Rgb Values To Color Elements",
+    "url": "https://www.freecodecamp.org/learn/responsive-web-design/basic-css/use-rgb-values-to-color-elements",
+    "remove": ["ALL_HELPERS"],
+    "description": "\n<p>Another way you can represent colors in CSS is by using <code>RGB</code> values.</p>\n<p>The <code>RGB</code> value for black looks like this:</p>\n<pre class=\"language-css\" tabindex=\"0\"><code class=\"language-css\"><span class=\"token function\">rgb</span><span class=\"token punctuation\">(</span>0<span class=\"token punctuation\">,</span> 0<span class=\"token punctuation\">,</span> 0<span class=\"token punctuation\">)</span>\n</code></pre>\n<p>The <code>RGB</code> value for white looks like this:</p>\n<pre class=\"language-css\" tabindex=\"0\"><code class=\"language-css\"><span class=\"token function\">rgb</span><span class=\"token punctuation\">(</span>255<span class=\"token punctuation\">,</span> 255<span class=\"token punctuation\">,</span> 255<span class=\"token punctuation\">)</span>\n</code></pre>\n<p>Instead of using six hexadecimal digits like you do with hex code, with <code>RGB</code> you specify the brightness of each color with a number between 0 and 255.</p>\n<p>If you do the math, the two digits for one color equal 16 times 16, which gives us 256 total values. So <code>RGB</code>, which starts counting from zero, has the exact same number of possible values as hex code.</p>\n<p>Here's an example of how you'd change the <code>body</code> background to orange using its RGB code.</p>\n<pre class=\"language-css\" tabindex=\"0\"><code class=\"language-css\"><span class=\"token selector\">body</span> <span class=\"token punctuation\">{</span>\n  <span class=\"token property\">background-color</span><span class=\"token punctuation\">:</span> <span class=\"token function\">rgb</span><span class=\"token punctuation\">(</span>255<span class=\"token punctuation\">,</span> 165<span class=\"token punctuation\">,</span> 0<span class=\"token punctuation\">)</span><span class=\"token punctuation\">;</span>\n<span class=\"token punctuation\">}</span>\n</code></pre>\n",
+    "instructions": "\n<p>Let's replace the hex code in our <code>body</code> element's background color with the RGB value for black: <code>rgb(0, 0, 0)</code></p>\n"
+  },
+  {
+    "section": "Basic Css",
+    "name": "Use Rgb To Mix Colors",
+    "url": "https://www.freecodecamp.org/learn/responsive-web-design/basic-css/use-rgb-to-mix-colors",
+    "remove": ["ALL_HELPERS"],
+    "description": "\n<p>Just like with hex code, you can mix colors in RGB by using combinations of different values.</p>\n",
+    "instructions": "\n<p>Replace the hex codes in our <code>style</code> element with their correct RGB values.</p>\n<table class=\"table table-striped\"><tbody><tr><th>Color</th><th>RGB</th></tr><tr><td>Blue</td><td><code>rgb(0, 0, 255)</code></td></tr><tr><td>Red</td><td><code>rgb(255, 0, 0)</code></td></tr><tr><td>Orchid</td><td><code>rgb(218, 112, 214)</code></td></tr><tr><td>Sienna</td><td><code>rgb(160, 82, 45)</code></td></tr></tbody></table>\n"
+  },
+  {
+    "section": "Basic Css",
+    "name": "Use Css Variables To Change Several Elements At Once",
+    "url": "https://www.freecodecamp.org/learn/responsive-web-design/basic-css/use-css-variables-to-change-several-elements-at-once",
+    "remove": ["ALL_HELPERS"],
+    "description": "\n<p><dfn>CSS Variables</dfn> are a powerful way to change many CSS style properties at once by changing only one value.</p>\n<p>Follow the instructions below to see how changing just three values can change the styling of many elements.</p>\n",
+    "instructions": "\n<p>In the <code>penguin</code> class, change the <code>black</code> value to <code>gray</code>, the <code>gray</code> value to <code>white</code>, and the <code>yellow</code> value to <code>orange</code>.</p>\n"
+  },
+  {
+    "section": "Basic Css",
+    "name": "Create A Custom Css Variable",
+    "url": "https://www.freecodecamp.org/learn/responsive-web-design/basic-css/create-a-custom-css-variable",
+    "remove": ["ALL_HELPERS"],
+    "description": "\n<p>To create a CSS variable, you just need to give it a name with two hyphens in front of it and assign it a value like this:</p>\n<pre class=\"language-css\" tabindex=\"0\"><code class=\"language-css\"><span class=\"token property\">--penguin-skin</span><span class=\"token punctuation\">:</span> gray<span class=\"token punctuation\">;</span>\n</code></pre>\n<p>This will create a variable named <code>--penguin-skin</code> and assign it the value of <code>gray</code>. Now you can use that variable elsewhere in your CSS to change the value of other elements to gray.</p>\n",
+    "instructions": "\n<p>In the <code>penguin</code> class, create a variable name <code>--penguin-skin</code> and give it a value of <code>gray</code>.</p>\n"
+  },
+  {
+    "section": "Basic Css",
+    "name": "Use A Custom Css Variable",
+    "url": "https://www.freecodecamp.org/learn/responsive-web-design/basic-css/use-a-custom-css-variable",
+    "remove": ["ALL_HELPERS"],
+    "description": "\n<p>After you create your variable, you can assign its value to other CSS properties by referencing the name you gave it.</p>\n<pre class=\"language-css\" tabindex=\"0\"><code class=\"language-css\"><span class=\"token property\">background</span><span class=\"token punctuation\">:</span> <span class=\"token function\">var</span><span class=\"token punctuation\">(</span>--penguin-skin<span class=\"token punctuation\">)</span><span class=\"token punctuation\">;</span>\n</code></pre>\n<p>This will change the background of whatever element you are targeting to gray because that is the value of the <code>--penguin-skin</code> variable. Note that styles will not be applied unless the variable names are an exact match.</p>\n",
+    "instructions": "\n<p>Apply the <code>--penguin-skin</code> variable to the <code>background</code> property of the <code>penguin-top</code>, <code>penguin-bottom</code>, <code>right-hand</code> and <code>left-hand</code> classes.</p>\n"
+  },
+  {
+    "section": "Basic Css",
+    "name": "Attach A Fallback Value To A Css Variable",
+    "url": "https://www.freecodecamp.org/learn/responsive-web-design/basic-css/attach-a-fallback-value-to-a-css-variable",
+    "remove": ["ALL_HELPERS"],
+    "description": "\n<p>When using your variable as a CSS property value, you can attach a fallback value that your browser will revert to if the given variable is invalid.</p>\n<p><strong>Note:</strong> This fallback is not used to increase browser compatibility, and it will not work on IE browsers. Rather, it is used so that the browser has a color to display if it cannot find your variable.</p>\n<p>Here's how you do it:</p>\n<pre class=\"language-css\" tabindex=\"0\"><code class=\"language-css\"><span class=\"token property\">background</span><span class=\"token punctuation\">:</span> <span class=\"token function\">var</span><span class=\"token punctuation\">(</span>--penguin-skin<span class=\"token punctuation\">,</span> black<span class=\"token punctuation\">)</span><span class=\"token punctuation\">;</span>\n</code></pre>\n<p>This will set background to <code>black</code> if your variable wasn't set. Note that this can be useful for debugging.</p>\n",
+    "instructions": "\n<p>It looks like there is a problem with the variables supplied to the <code>.penguin-top</code> and <code>.penguin-bottom</code> classes. Rather than fix the typo, add a fallback value of <code>black</code> to the <code>background</code> property of the <code>.penguin-top</code> and <code>.penguin-bottom</code> classes.</p>\n"
+  },
+  {
+    "section": "Basic Css",
+    "name": "Improve Compatibility With Browser Fallbacks",
+    "url": "https://www.freecodecamp.org/learn/responsive-web-design/basic-css/improve-compatibility-with-browser-fallbacks",
+    "remove": ["ALL_HELPERS"],
+    "description": "\n<p>When working with CSS you will likely run into browser compatibility issues at some point. This is why it's important to provide browser fallbacks to avoid potential problems.</p>\n<p>When your browser parses the CSS of a webpage, it ignores any properties that it doesn't recognize or support. For example, if you use a CSS variable to assign a background color on a site, Internet Explorer will ignore the background color because it does not support CSS variables. In that case, the browser will use whatever value it has for that property. If it can't find any other value set for that property, it will revert to the default value, which is typically not ideal.</p>\n<p>This means that if you do want to provide a browser fallback, it's as easy as providing another more widely supported value immediately before your declaration. That way an older browser will have something to fall back on, while a newer browser will just interpret whatever declaration comes later in the cascade.</p>\n",
+    "instructions": "\n<p>It looks like a variable is being used to set the background color of the <code>.red-box</code> class. Let's improve our browser compatibility by adding another <code>background</code> declaration right before the existing declaration and set its value to <code>red</code>.</p>\n"
+  },
+  {
+    "section": "Basic Css",
+    "name": "Inherit Css Variables",
+    "url": "https://www.freecodecamp.org/learn/responsive-web-design/basic-css/inherit-css-variables",
+    "remove": ["ALL_HELPERS"],
+    "description": "\n<p>When you create a variable, it is available for you to use inside the selector in which you create it. It also is available in any of that selector's descendants. This happens because CSS variables are inherited, just like ordinary properties.</p>\n<p>To make use of inheritance, CSS variables are often defined in the <dfn>:root</dfn> element.</p>\n<p><code>:root</code> is a <dfn>pseudo-class</dfn> selector that matches the root element of the document, usually the <code>html</code> element. By creating your variables in <code>:root</code>, they will be available globally and can be accessed from any other selector in the style sheet.</p>\n",
+    "instructions": "\n<p>Define a variable named <code>--penguin-belly</code> in the <code>:root</code> selector and give it the value of <code>pink</code>. You can then see that the variable is inherited and that all the child elements which use it get pink backgrounds.</p>\n"
+  },
+  {
+    "section": "Basic Css",
+    "name": "Change A Variable For A Specific Area",
+    "url": "https://www.freecodecamp.org/learn/responsive-web-design/basic-css/change-a-variable-for-a-specific-area",
+    "remove": ["ALL_HELPERS"],
+    "description": "\n<p>When you create your variables in <code>:root</code> they will set the value of that variable for the whole page.</p>\n<p>You can then over-write these variables by setting them again within a specific element.</p>\n",
+    "instructions": "\n<p>Change the value of <code>--penguin-belly</code> to <code>white</code> in the <code>penguin</code> class.</p>\n"
+  },
+  {
+    "section": "Basic Css",
+    "name": "Use A Media Query To Change A Variable",
+    "url": "https://www.freecodecamp.org/learn/responsive-web-design/basic-css/use-a-media-query-to-change-a-variable",
+    "remove": ["ALL_HELPERS"],
+    "description": "\n<p>CSS Variables can simplify the way you use media queries.</p>\n<p>For instance, when your screen is smaller or larger than your media query break point, you can change the value of a variable, and it will apply its style wherever it is used.</p>\n",
+    "instructions": "\n<p>In the <code>:root</code> selector of the <code>media query</code>, change it so <code>--penguin-size</code> is redefined and given a value of <code>200px</code>. Also, redefine <code>--penguin-skin</code> and give it a value of <code>black</code>. Then resize the preview to see this change in action.</p>\n"
+  }
+]

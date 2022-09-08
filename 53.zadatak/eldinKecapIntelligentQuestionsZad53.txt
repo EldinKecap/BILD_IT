@@ -1,0 +1,21 @@
+1. Does this alter the constructor or does it leave the variable undefined?
+let user = {
+  name,  // same as name:name
+  age: 30
+};
+2. if it is a string why is the plus added in the alert ?
+let codes = {
+  "+49": "Germany",
+  "+41": "Switzerland",
+  "+44": "Great Britain",
+  // ..,
+  "+1": "USA"
+};
+
+for (let code in codes) {
+  alert( +code ); // 49, 41, 44, 1
+}
+3. If you create an object using a constructor and then override the constructor to add new atributes,
+will it use the last known declaration as with other functions ?
+4.Is prototype used only to add other methods and properties to the objects ?
+5.What is a query in document.querySelector ?

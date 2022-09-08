@@ -1,0 +1,93 @@
+<!-- I wrote a section about myself and set up a nav bar with an animation for my logo-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <style>
+            body{
+                font-family: monospace;
+            }
+            #logo{
+                font-size: 23px;
+                margin-left: 10px;
+                align-self: center;
+                animation-name: logo;
+                animation-duration: 3s;
+                animation-fill-mode: forwards;
+                animation-iteration-count: 1;
+            }
+            @keyframes logo {
+
+                0%
+                {
+                    font-size: 20px;
+                    opacity: 0;
+                }
+                100%{
+                    opacity: 1;
+                    font-size: 23px;
+                }
+                
+            }
+            nav{
+                border: solid;
+                border-width: 1px;
+                border-radius: 10px;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between ;
+                width: 100%;
+                height: 35px;
+                background: linear-gradient(35deg,pink,white,cyan);
+            }
+            .navigation{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                width: 50%;
+                justify-content: space-evenly;
+                list-style: none;       
+            }
+
+
+           @media (max-width:425px;){
+               .navigation{
+                    width: 75%;     
+               }
+           }
+        </style>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Eldin Kecap Resume</title>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <p id="logo">Eldin Kecap</p>
+                <ul class="navigation">                 
+                    <li>About</li> 
+                   <li>Technologies</li> 
+                    <li>Contact Me</li>   
+                </ul>
+            </nav>
+        </header>
+        <main>
+                <h1>Web developer</h1>
+            <section>
+                <h2>About Me</h2>
+                <p>
+                    My name is Eldin Kecap and I'am a web developer from Tuzla. I love programming and doing sports. If you need a professional 
+                    looking website for your business you have come to the right place. I am a currently studying at IPI academy at Tuzla. This is 
+                    my final year of collage and I am ready to start working for a company that develops websites.
+
+                </p>
+            </section>
+
+
+        </main>
+
+        <footer>
+            <a href="#logo"></a>
+        </footer>
+    </body>
+</html>

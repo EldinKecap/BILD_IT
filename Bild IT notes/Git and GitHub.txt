@@ -1,0 +1,11 @@
+BASIC TUTORIAL
+https://www.freecodecamp.org/news/git-and-github-for-beginners/
+https://www.freecodecamp.org/news/git-cheat-sheet/
+https://www.atlassian.com/git/tutorials/what-is-version-control
+
+When creating an ssh key dont name it because it will not work for some reason.
+dodaje se remote directory
+git remote add origin (ovdje link sa githuba ide bez zagradi)
+
+KAD NMG PUSHAT NOVI DIRECTORY nit pullat jer je unrelated histories
+https://www.youtube.com/watch?v=ZcnuuP32SY4

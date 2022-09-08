@@ -1,0 +1,5 @@
+1. https://www3.nd.edu/~dthain/compilerbook/compilerbook.pdf
+2. https://medium.com/@thelukaswils/understanding-compilers-for-humans-ba970e045877
+3. https://www.geeksforgeeks.org/introduction-of-compiler-design/
+4. https://www.youtube.com/watch?v=QXjU9qTsYCc
+5. https://en.wikipedia.org/wiki/Compiler

@@ -1,0 +1,15 @@
+Element is an HTML component.Any tag with its content (if it has any) is an element. Sometimes elements are used to refer to selector like when we are selecting them in css. Or when we are creating pseudo elements.
+Block is used in context as a block element which means it takes the whole size of its parent element and it can contain other block and inline elements.
+Declaration is used in context as function or variable declaration which means that a function has been given a name but its not yet defined by set of instructions, 
+while variable declaration means that a variable has a name but it doesnt have a value until we assign one to it.
+Attribute is located in the opening tag of an element and they can have multiple different purposes. One of those purposes can be an id attribute which is used to give a uniqe id to an element
+which can later on be used by javascript or css to select that element and manipulate its style or behaviour.
+Property in css is a line of code between the curly brackets of the selector that changes the way an element looks in the browser when a value is given to it in a certain order.
+Property is also used to refer to an attribute of an html element at certain points.
+Selector is used to select an element we want to change in css. It can take multiple shapes like and id selector which starts with a hashtag and is followed by the content of the id attribute of the element we want to work on
+or a class selector that starts with a dot and is followed by content of the class attribute or even just the name of a tag between the less than and greater than brackets. 
+Class is an HTML attribute that includes a name of class we want to later on make changes to through css. We use classes when we want to style multiple different elements that all have the same class.
+Variable is used to store date like strings,numbers or characters which can later be sent as an argument into a function or be manipulated in some different way. 
+Fcc also uses this word to talk about different rates at which animation can play out aka Variable rates and they call css property a variable multiple times.
+Function is a set of instructions that do a task and can be reused by calling its name whenever that same task needs to be solved but with different values. Css functions are used as property values like linear-gradient()
+function or a cubic-bezier() function.

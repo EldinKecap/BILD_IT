@@ -1,0 +1,19 @@
+#inputWindow {
+    display: flex;
+    flex-direction: column;
+    margin: 0% 40%;
+    margin-top: 15%;
+    padding: 15px;
+    padding-bottom: 30px;
+    border: solid;
+    border-radius: 10%;
+    border-width: 3px;
+    box-shadow: 4px 4px 8px gray ,-4px 4px 8px darkgray ;
+    font-family: monospace;
+}
+h1,form{
+    text-align: center;
+}
+button{
+    margin-top: 5px ;
+}

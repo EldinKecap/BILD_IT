@@ -1,0 +1,50 @@
+I made this example work but i dont understand why it doesnt splice the element on the 1 index if i exclude
+these statements
+/////////////////////////////////////
+if(fullArr[0]===arrWithMissing[0]){
+        arrWithMissing.pop();
+        fullArr.shift();
+    }
+    if(arrWithMissing.length==0){
+///////////////////////////////////
+
+
+// 6.      Imamo dva niza. Elementi u arr1 su priredili zabavu i počeli da se
+// miješaju. Međutim, jedan od elemenata se izgubio! Vaš zadatak je vratiti
+// element koji je izgubljen.
+
+// Primjeri:
+
+// missing([1, 2, 3, 4, 5, 6, 7, 8], [1, 3, 4, 5, 6, 7, 8]) ➞ 2
+
+// missing([true,
+// true, false, false, true], [false, true, false, true]) ➞ true
+
+
+// Pretpostaviti da prvi niz uvijek sadrži 1 ili više elemenata.
+// Elementi se uvijek gube.
+// Niz također može imati duplikate.
+
+function missing(fullArr,arrWithMissing){
+    for (let i = 0; i < fullArr.length; i++) {
+        if(arrWithMissing.includes(fullArr[i])){
+            let num = arrWithMissing.findIndex((number)=>fullArr[i]===number);
+            // console.log(num)
+            arrWithMissing.splice(num,1) ;
+            fullArr.splice(i,1);
+            // console.log(arrWithMissing);
+            // console.log(fullArr);
+            i=0;
+        }
+    }
+    if(fullArr[0]===arrWithMissing[0]){
+        arrWithMissing.pop();
+        fullArr.shift();
+    }
+    if(arrWithMissing.length==0){
+        return String(fullArr);  
+    }
+    
+}
+console.log(missing([2,5,3,4,1,7,9,8,6,4], [1, 3, 4, 5, 6, 7, 8,9]));
+console.log(missing([true, true, false, false, true], [false, true, false, true]));

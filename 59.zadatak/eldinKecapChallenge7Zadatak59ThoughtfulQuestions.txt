@@ -1,0 +1,31 @@
+I have finished this assignment but it only works with the same words not substrings. The problem is when you count all the
+characters including spaces and even if you input a random string and compare it to a random string.
+The program i wrote works for regular sentences that make sense to humans but it doesnt work when you compare 'asdfhghfs'
+and 'hghfs/sdfa' where it should give back 'hghfs'. I did not write it to compare strings like that.
+I found a lot of people explaining Longest Common substring but unfortunately I did not understand how to 
+implement the algorythm. I understand that you would need a dynamic programming matrix like the one used in this video. 
+https://www.youtube.com/watch?v=NOc9l6FuVbk
+But i dont really understand how it works and he was using some methods and syntax i have not yet encountered
+so i didnt want to just copy what the person did in the video. I dont really have a question to ask but maybe if you could 
+share an easier solution that doesnt use this matrix it might be helpful.
+I will rewatch a video a few more times to try and understand it a little bit better but for now this is my solution.
+////////////////////////////////////////////////////////
+function longestSubstring(str1,str2){
+    str1 = str1.replace(/[,.]/g,'');
+    str2 = str2.replace(/[,.]/g,'');
+    let arrWords1 = str1.split(' ');
+    let arrWords2 = str2.split(' ');
+    console.log(arrWords1);
+    let maxWord='';
+    for (let i = 0; i < arrWords1.length; i++) {
+        for (let j = 0; j < arrWords2.length; j++) {
+            if(arrWords1[i]===arrWords2[j]){
+                if(maxWord.length<arrWords1[i].length ){
+                    maxWord=arrWords1[i];
+                }
+            }
+        }   
+    }
+    return maxWord;
+}
+console.log(longestSubstring('Talk is cheap, show me the code.' ,'Me like to code, me happy.'));

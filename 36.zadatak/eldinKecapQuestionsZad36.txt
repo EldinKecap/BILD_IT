@@ -1,0 +1,6 @@
+1. Can we combine if else and ternary operators ?
+2. What is the speed of execution difference between if else if  else statement and switch statement ?
+3. What is the ?. operator ?
+4. Why would you u convert OR to AND and AND to OR ?
+5. If we assign this to a variable true && "dog" it evaluates to true and returns dog and I am pretty sure it saves dog in the variable
+but what happens to the evaluated true ?

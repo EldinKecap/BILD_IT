@@ -1,0 +1,13 @@
+1. In the world of software, what is a tool?
+A tool is everything that helps you create ,test ,deploy solutions and makes your life as a developer easier and more productive. Examples of tools are
+(editors/IDE, file sharing websites, version control system, linux, communication channels for teams, continous integration, project
+management software, frameworks,package managers,web design tools like adobe Dreamweaver, Photo editors ). 
+
+In the world of software, what is not a tool?
+When choosing a tool we have to take into consideration it's usefulness because there is no perfect tool for 
+every situation. You cant cut paper with a hammer. You dont use web deployment software for a desktop app.
+If you work alone you dont need a communication channel but you might make use of a project management software.
+I would also like to say that in the content I have read search engines, tutorials etc...
+are not mentioned as tools even though I feel like they are at least learning tools if nothing else. Also most video games are not tools but
+we did play some while learning. I guess content like images, videos etc... are not tools because they are 
+something like material we use to create goodlooking websites.

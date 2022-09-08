@@ -1,0 +1,16 @@
+1. Why cant he access the object using the dot operator ?
+For example, if you had an object with a property named 3d, it can only be referenced using bracket notation.
+
+renderer.3d.setTexture(model, 'character.png');     // a syntax error
+renderer['3d'].setTexture(model, 'character.png');  // works properly
+
+2.What are RegExp ?
+3. What does ({ type }) => type mean in this example ?
+
+let result = inventory.groupBy( ({ type }) => type );
+console.log(result.vegetables)
+// expected output: Array [Object { name: "asparagus", type: "vegetables" }]
+
+4. What does isFinite function do ?
+
+5.What happens if we set the length property to a negative number?

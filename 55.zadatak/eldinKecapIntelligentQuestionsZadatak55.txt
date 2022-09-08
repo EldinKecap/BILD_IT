@@ -1,0 +1,24 @@
+1. In this example
+/////////////////////////////////////////////////////////
+const personPrototype = {
+  greet() {
+    console.log(`hello, my name is ${this.name}!`);
+  }
+}
+
+function Person(name) {
+  this.name = name;
+}
+
+Person.prototype = personPrototype;
+Person.prototype.constructor = Person;
+//////////////////////////////////////////////////////////
+why do we use the last line, if we didnt use it would the constructor on the personPrototype be called ?
+2. Is using prototypes the only way we can override methods without the use of inheritance and classes ?
+3. Why do we not use keywords like let, var and const inside objects, does the keyword in front of the objec
+on the outside has any effects on the behaviour of values inside the object?
+4. Can we alter or add methods to the Object.prototype, and also is prototype one of those old things like var
+that are almost replaced now days. Because classes are there and are not really given as much attention as 
+prototype. I understand that prototype can add and remove properties during run time but is that the only reason
+why it is still in use ? 
+5. Will for in loop show inherited properties or methods and will it show the ones on prototype ?

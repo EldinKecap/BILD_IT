@@ -1,0 +1,14 @@
+Flex is a display property value used to align child elements of a selected element in rows or columns depending on the value(row or column) of the flex-direction property.
+We use justify-content property with flex to move child elements to the left(flex-start) to the right(flex-end) to both sides (space-between) to both sides but
+with half a space on both sides(space-around) and to both sides with a space on both sides(space-evenly) if the flex-direction is set to row. We use align-items property to move the children on Y axis if 
+flex-direction property has a value of row and if it has a value of column we move them on the X axis. Values of align-items property are flex-start (aligns the items to top
+if its a row and left if its a column), flex-end(aligns the items to the bottom if its a row and to the right if its a column), center (aligns the elements to the center), stretch(stretches elements 
+top to bottom if its a row or left to right if its a column), baseline (aligns element based on the text inside them). Flex-wrap can be used on the parent element to wrap the elements from left to right in a new
+row or top to bottom in a new column depending on the flex-direction property.
+We use flex-shrink and flex-grow properties on children of the parent that has display property with a value of flex. Flex-shrink allows us to shrink the child elements by adding the property to each selector and
+entering an integer number. The elements shrinking speed is based on the number values of the flex-shrink in all elements (the bigger the difference between numbers the faster its going to shrink) . The grow just does this in reverse. Flex-basis is used to set a base size of the element.
+All these can be set with flex property in the children elements like this (flex: shrinkNumberValue growNumberValue basisSizeValue(example px,em)).
+Order property is used to set the order in which the children will be displayed and is added to each child selector individualy(p{order:1;} h2{order:2;}). 
+We can also use align-self property on child selectors with all the align-items values and it works the same but only on each child individualy.
+Align-content property is used with flex-wrap property to manipulate the placement of elements that are in a row and it takes the same values as align-items(align-items is used when you have just one row). 
+Flex-flow is a combiantion of flex-wrap and flex-direction and the input format is like this(flex-flow:row wrap;) 

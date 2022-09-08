@@ -1,0 +1,12 @@
+1. https://www.freecodecamp.org/news/javascript-under-the-hood-v8/
+2. https://medium.com/jspoint/how-javascript-works-in-browser-and-node-ab7d0d09ac2f
+3. https://www.youtube.com/watch?v=xckH5s3UuX4&t
+4. https://dzone.com/articles/how-javascript-engine-works
+5. https://dev.to/edisonpappi/how-javascript-engines-chrome-v8-works-50if
+6. https://www.cloudflare.com/learning/serverless/glossary/what-is-chrome-v8/
+7. https://hackernoon.com/javascript-v8-engine-explained-3f940148d4ef
+8. https://mouritech.com/blog/v8-javascript-engine
+9. https://www.geeksforgeeks.org/introduction-to-javascript-engines/
+10. https://en.wikipedia.org/wiki/V8_(JavaScript_engine)
+11. https://nodejs.dev/learn/the-v8-javascript-engine
+12. https://www.htmlgoodies.com/javascript/how-javascript-works-behind-the-scenes/

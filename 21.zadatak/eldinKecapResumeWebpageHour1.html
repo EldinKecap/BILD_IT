@@ -1,0 +1,140 @@
+<!-- Iworked on my nav when its size is below 425, I found a hero image online, made a hover for all the nav children
+ and made my main content look a bit like a card-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <style>
+
+            body {
+                font-family: monospace;
+                background: linear-gradient(90deg,pink,cyan,pink);
+                color: #7e0000;
+            }
+
+            #logo {
+                font-size: 20px;
+                margin-left: 10px;
+                align-self: center;
+                text-align: center;
+                animation-name: logo;
+                animation-duration: 2s;
+                animation-fill-mode: forwards;
+                animation-iteration-count: 1;
+                animation-timing-function: ease-in;
+            }
+
+            #logo:hover {
+                text-decoration: underline;
+            }
+
+            @keyframes logo {
+
+                0% {
+                    font-size: 15px;
+                    opacity: 0;
+                }
+                100% {
+                    opacity: 1;
+                    font-size: 20px;
+                }
+
+            }
+            nav {
+                margin-bottom: 10px;
+                border-style: solid;
+                border-width: 1px;
+                border-radius: 10px;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                width: 100%;
+                height: 35px;
+                background: linear-gradient(75deg,pink,white,cyan);
+
+            }
+
+            .navigation {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                width: 50%;
+                justify-content: space-evenly;
+                list-style: none;
+                text-align: center;
+            }
+            #heroimage{
+                width: 100%;
+            }
+            main {
+                border: solid;
+                border-width: 1px;
+                border-radius: 10px;
+                width: 50%;
+                position: relative;
+                margin: 0 25%;
+                text-align: center;
+            }
+
+            .aboutMe {
+                margin-top: 30px;
+            }
+
+            li:hover {
+                font-size: 15px;
+                text-decoration: underline;
+            }
+
+            @media(max-width : 425px) {
+                nav {
+                    height: 50px;
+                }
+                .navigation {
+                    width: 75%;
+                }
+                #logo {
+                    font-size: 16px;
+                }
+
+                main {
+                    margin: 0;
+                    width: 100%;
+                }
+            }
+        </style>
+        <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <title>Eldin Kecap Resume</title>
+                </head>
+                <body>
+                    <header>
+                        <nav>
+                            <p id="logo">Eldin Kecap</p>
+                            <ul class="navigation">
+                                <li>About</li>
+                                <li>Technologies</li>
+                                <li>Contact Me</li>
+                            </ul>
+                        </nav>
+                    </header>
+                    <img id="heroimage" src="/randomdev.jpg" alt="developer photo">
+                    <main>
+                        <h1>Web developer</h1>
+                        <section>
+                            <h2 class="aboutMe">About Me</h2>
+                            <p class="aboutMe">
+                                My name is Eldin Kecap and I'am a web developer from Tuzla. I love programming and doing sports. If you need a professional 
+                                                                                    looking website for your business you have come to the right place. I am a currently studying at IPI academy at Tuzla. This is 
+                                                                                    my final year of collage and I am ready to start working for a company that develops websites.
+      
+                            </p>
+                        </section>
+
+
+                    </main>
+
+                    <footer>
+                        <a href="#logo"></a>
+                    </footer>
+                </body>
+            </html>

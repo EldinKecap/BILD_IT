@@ -1,0 +1,67 @@
+1. In this example is the unnamed function called or the makeCounter function called ?
+function makeCounter() {
+  let count = 0;
+
+  return function() {
+    return count++;
+  };
+}
+
+let counter = makeCounter();
+
+alert( counter() ); // 0
+alert( counter() ); // 1
+alert( counter() ); // 2
+2. Are the parameters of a function also considered declaration of variables that can 
+be used later on and why dont they need keywords like let,var or const?
+3. When assigning functions to a variable should we always name them(because they are named in only one example)
+, how does that help us find mistakes in our code ?
+4. When using this with nested functions does that refers to the variables with the scope of the function in which
+we use the this keyword ?
+5. Why does this example : 
+```````````````
+function makeArmy() {
+  let shooters = [];
+
+  let i = 0;
+  while (i < 10) {
+    let shooter = function() { // create a shooter function,
+      alert( i ); // that should show its number
+    };
+    shooters.push(shooter); // and add it to the array
+    i++;
+  }
+
+  // ...and return the array of shooters
+  return shooters;
+}
+
+let army = makeArmy();
+
+// all shooters show 10 instead of their numbers 0, 1, 2, 3...
+army[0](); // 10 from the shooter number 0
+army[1](); // 10 from the shooter number 1
+army[2](); // 10 ...and so on.
+``````````````````````````````
+prints out i that is equal to 10. And this example :
+``````````````````````
+function makeArmy() {
+
+  let shooters = [];
+
+  for(let i = 0; i < 10; i++) {
+    let shooter = function() { // shooter function
+      alert( i ); // should show its number
+    };
+    shooters.push(shooter);
+  }
+
+  return shooters;
+}
+
+let army = makeArmy();
+
+army[0](); // 0
+army[5](); // 5
+```````````````````````
+prints out i based on which iteration it was when the function was pushed?

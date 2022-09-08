@@ -1,0 +1,26 @@
+{
+  "name": "jasmins-extension",
+  "version": "0.2.1",
+  "description": "This extension will hide all the help on the Free Code Camp website so you can focus on testing yourself without being tempet to ask for help. Of course, if needed, extension can be disabled at any time.",
+  "main": "createChallengesJson.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dotundefined/fcc-utility.git"
+  },
+  "author": "Jasmin Mustafic",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dotundefined/fcc-utility/issues"
+  },
+  "homepage": "https://github.com/dotundefined/fcc-utility#readme",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.10",
+    "nodejs-web-scraper": "^6.0.2",
+    "pupeteer": "^0.0.1",
+    "puppeteer": "^13.4.0",
+    "selenium-webdriver": "^4.1.1"
+  }
+}

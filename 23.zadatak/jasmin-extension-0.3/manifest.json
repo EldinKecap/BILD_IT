@@ -1,0 +1,25 @@
+{
+  "browser_action": {
+    "browser_style": true,
+    "default_title": "jasmins-extension",
+    "default_popup": "index.html",
+    "default_icon": "logo.png"
+  },
+  "icons": {
+    "512": "logo.png"
+  },
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "description": "Extension for taking the Jasmin's test..",
+  "manifest_version": 2,
+  "name": "Jasmin's Extension",
+  "permissions": [
+    "tabs",
+    "activeTab",
+    "https://www.freecodecamp.org/*",
+    "storage"
+  ],
+  "version": "0.2.1",
+  "content_security_policy": "default-src 'self'; style-src 'self' https://cdn.jsdelivr.net 'unsafe-inline';img-src 'self' data: *; script-src 'self'"
+}

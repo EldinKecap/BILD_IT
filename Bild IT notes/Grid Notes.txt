@@ -1,0 +1,43 @@
+Grid is a value of a Display property. Parent element with the grid value is called a container while its childern are called items.
+Container element can have properties like :
+1. grid-template-columns which will create a number of columns equal to the number of values passed 
+to it and values are used to set the width of all items in a column.(grid-template-columns: 100px 100px ; will create 2 columns with each being 100px)
+2. grid-template-rows which will create a number of rows equal to the number of values passed
+ to it and the values are used to set the height of all the items in a row. (grid-template-rows: 20px 20px; will create 2 rows with each being 20px)
+These two properties take in values of px,em,%,auto(sets width and height equal to the content size),fr(divides the space into fractions and that means that if we
+set the value like this grid-template-rows: 1fr 2fr; it will divide the container size into 3 parts and the first row will have a size of one part and the second row will
+have a size of the other 2 parts),we can also use minmax(min,max) function and it will set the minimum size of an item to be equal to the min and maximum size
+of an item to be equal to the max argument. 
+They can also use repeat() function to repeat the values based on the number you pass to it as a first argument. Example: repeat(3,50px) is the same as writing 50px 50px 50px.
+Repeat can also take auto-fill or auto-fit as the first argument (instead of a number). The auto-fill will keep on adding columns or rows after the viewport has expanded past the combined min values of the 
+items in the grid but they will be empty while auto-fit will stretch the items to fit the viewport size up to the maximum size.  
+  
+3. grid-row-gap takes a value and creates a space between the rows in a grid.
+4. grid-column-gap takes a value and creates a space between the columns in a grid equal to the value.
+5. grid-gap takes in one or two values. If it takes in one value it sets the space between rows and columns to be equal to that value. If it takes in 2 values it sets the space
+between rows to the first value and it sets the space between the columns to the second value.  
+6. justify-items is used to horizontally align all items in a grid.It takes in values of: start(aligns to the left),end(aligns to the right),
+center(aligns to the center),stretch(this is set by default and it takes up whole space of an item)
+7. align-items is used to vertically align items. It takes the same values as justify-items property but the start value sets the items content
+ to the top and the end value sets the items content to the bottom of the item.
+8. grid-template-area is used to set a positon of an item based on the value provided in the grid-area: property in the items selector,
+It takes in a number of values in that are surrounded by double quotation marks ("") and based on the number of values in the quotation marks
+the grid will have that many columns. Number of rows is determined by the number of qoutaiton marks that surround each row of values.
+
+Item element can have these properties :
+1. grid-column takes in 2 numbers separated by a "/".Those numbers refer to lines that separate the columns with the first line
+ starting in front of the grid on the left side and counting every next space between the columns from left to right including the line 
+after the last column. grid-column: 3 / 5 in a grid 3x5 would make the element take up the 3rd and 4th grid item spaces from left to right.  
+2. grid-row takes in 2 numbers separated by "/". Those numbers refer to the horizontal lines that separate the rows including the line above
+ the first row of items in the grid and the line bellow the last row of items in a grid. grid-row: 1 / 3 in a 3x3 would make an item take up
+the space for items at the locations of 1x1 and 2x1. 
+3. justify-self is used to horizontali align content of an item in a grid. It can align the content to the left (value set to start),
+center(value set to center),right(value set to end),it can also take up the whole container by default (which is when the value is set to 
+stretch).
+4. align-self is used to verticaly align content in an item.It has all the same values but the start value aligns it to the top and the end value
+aligns it to the bottom of an item.  
+5. grid-area can be used with grid-template-area property in the container element by having its value be one of the values declared in grid-template-area property.
+You can also use the grid-area property to declare a position of an item and the space it will hold in a grid by itself. To do that you use 
+horizontal line at which u want your item to start separated by "/" followed by a vertical line you want your item to start at separated by "/" 
+followed by a horizontal line you want your item to end at separated by"/" and finally followed by a vertical line you want your item to end
+with. grid-area: 2/2/4/4; would take up space in a 3x3 grid would take up the 2x2,2x3,3x2,3x3 spaces.

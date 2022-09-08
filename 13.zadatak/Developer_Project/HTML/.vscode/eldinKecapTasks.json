@@ -1,0 +1,11 @@
+{
+   
+    "version": "0.1.0",
+    "command": "edge",
+    "windows": {
+        "command": "explorer.exe"
+    },
+    "args": [
+        "firstpage.html"
+    ]
+}

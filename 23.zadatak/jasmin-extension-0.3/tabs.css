@@ -1,0 +1,120 @@
+html,
+body {
+  width: 450px;
+}
+
+.slider-container {
+  margin: 0 auto;
+  padding-bottom: 10px;
+}
+
+select {
+  width: 100%;
+  cursor: pointer;
+}
+
+.button {
+  width: 100%;
+  border: 2px solid #666;
+  height: 100%;
+}
+
+.go-btn {
+  width: 100%;
+  border: 1px solid #666;
+}
+
+.slider {
+  border: none;
+  position: relative;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 125px;
+  margin: auto;
+  right: 0;
+}
+
+.slider-checkbox {
+  display: none;
+}
+
+.slider-label {
+  border: 2px solid #666;
+  border-radius: 20px;
+  cursor: pointer;
+  display: block;
+  overflow: hidden;
+}
+
+.slider-inner {
+  display: block;
+  margin-left: -100%;
+  transition: margin 0.2s ease-in 0s;
+  width: 200%;
+}
+
+.slider-inner:before,
+.slider-inner:after {
+  box-sizing: border-box;
+  display: block;
+  float: left;
+  font-family: sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  height: 30px;
+  line-height: 30px;
+  padding: 0;
+  width: 50%;
+}
+
+.slider-inner:before {
+  background-color: #198754;
+  color: #fff;
+  content: 'ENABLED';
+  padding-left: 0.75em;
+}
+
+.slider-inner:after {
+  background-color: #eee;
+  color: #666;
+  content: 'DISABLED';
+  padding-right: 0.75em;
+  text-align: right;
+}
+
+.slider-circle {
+  background-color: #198754;
+  border: 2px solid #666;
+  border-radius: 30px;
+  bottom: 0;
+  display: block;
+  margin: 5px;
+  position: absolute;
+  right: 91px;
+  top: 0;
+  transition: all 0.2s ease-in 0s;
+  width: 24px;
+}
+
+.slider-checkbox:checked + .slider-label .slider-inner {
+  margin-left: 0;
+}
+
+.slider-checkbox:checked + .slider-label .slider-circle {
+  background-color: #eee;
+  right: 0;
+}
+
+/* Bootstrap override */
+.row {
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+
+.col,
+.col-10,
+.col-2 {
+  padding: 2px;
+}

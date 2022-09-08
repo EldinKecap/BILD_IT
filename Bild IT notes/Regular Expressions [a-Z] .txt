@@ -1,0 +1,51 @@
+Site : https://javascript.info/regexp-character-sets-and-ranges
+
+Flags
+
+Regular expressions may have flags that affect the search. 
+TIP :They are locatedafter the "/[]/".
+There are only 6 of them in JavaScript:
+
+i
+With this flag the search is case-insensitive: no difference between A and a (see the example below).
+g
+With this flag the search looks for all matches, without it – only the first match is returned.
+m
+Multiline mode (covered in the chapter Multiline mode of anchors ^ $, flag "m").
+s
+Enables “dotall” mode, that allows a dot . to match newline character \n (covered in the chapter Character classes).
+u
+Enables full Unicode support. The flag enables correct processing of surrogate pairs. More about that in the chapter Unicode: flag "u" and class \p{...}.
+y
+“Sticky” mode: searching at the exact position in the text (covered in the chapter Sticky flag "y", searching at position)
+
+Ranges
+
+\d – is the same as [0-9],
+\w – is the same as [a-zA-Z0-9_],
+\s – is the same as [\t\n\v\f\r ], plus few other rare Unicode space characters.
+
+TIP : if there is multiple ranges you want to search for you do not separate them with commas.
+
+Examples:
+1.When selecting Characters ( TIP :the searched for item must contain what is in [])
+
+Right way to select a words with one changing charcter
+
+// find [t or m], and then "op"
+alert( "Mop top".match(/[tm]op/gi) ); // "Mop", "top"
+// gi - means it is searching for all the matches(g) and is case-insensitive(i);
+
+wrong way to select a word.
+
+// find "V", then [o or i], then "la"
+alert( "Voila".match(/V[oi]la/) ); // null, no matches
+
+TIP : Ako hoces zadnje karaktere da testiras koristi $ na kraju /[a]$/ ovo testira da li je a na kraju rijeci,
+isto vrijedi i za pocetak samo se pise ovako /$[a]/.
+Za vise razlicitih karaktera da testira koristii se | (or) NPR. /[a|b|c]/ testira karaktere na a ,b ili c 
+ali samo prve na koje naleti da su a, b ili c. Ako dodam g na kraju /[a|b|c/g testira sve karaktere.
+/[]/.test(nekaVarijabla) OVA METODA TESTIRA PROSLIJEDJENU VARIJABLU I VRACA TRUE AKO SADRZI KARAKTERE IZ REGEXP.
+
+
+

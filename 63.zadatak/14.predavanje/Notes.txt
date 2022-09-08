@@ -1,0 +1,1 @@
+Prva dva file su uradjen zadatak a ostali su pokusaj da napravim funkcionalan gui sa kontrolom inputa ali nije uspjelo jer nisam bas dobro skonto kako koristit localStorage

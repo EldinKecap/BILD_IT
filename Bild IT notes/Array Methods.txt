@@ -1,0 +1,60 @@
+1. You can find the index of a particular item using the indexOf() method.
+This takes an item as an argument and returns the index, or -1 if the item was not found in the array
+
+2.To add one or more items to the end of an array we can use push(). 
+Note that you need to include one or more items that you want to add to the end of your array. Push returns new array.
+
+3.To add an item to the start of the array, use unshift(). Returns new array;
+
+4.To remove the last item from the array, use pop(). Returns the item.
+
+5.To remove the first item from an array, use shift(). Returns the item.
+
+6.If you know the index of an item, you can remove it from the array using splice(indexStart,indexEnd).
+the first argument says where to start removing items, and the second argument says how many items should be removed.
+So you can remove more than one item.
+
+7.Sometimes you will want to do the same thing to each item in an array, 
+leaving you with an array containing the changed items. You can do this using map().
+We give a function to the map(), and map() calls the function once for each item in the array, passing in the item. It
+then adds the return value from each function call to a new array, and finally returns the new array.
+EXAMPLE:
+
+function double(number) {
+  return number * 2;
+}
+const numbers = [5, 2, 7, 6];
+const doubled = numbers.map(double);
+console.log(doubled);  // [ 10, 4, 14, 12 ]
+
+8.Sometimes you'll want to create a new array containing only the items in the original array that match some test. 
+You can do that using filter(). The code below takes an array of strings and returns an array containing just the strings
+that are greater than 8 characters long
+
+function isLong(city) {
+  return city.length > 8;
+}
+const cities = ['London', 'Liverpool', 'Totnes', 'Edinburgh'];
+const longer = cities.filter(isLong);
+console.log(longer);  // [ "Liverpool", "Edinburgh" ]
+
+we give a function to the filter() method, and filter() calls this function for every item in the array, passing in the item. 
+If the function returns true, then the item is added to a new array. Finally it returns the new array.
+
+9.Often you'll be presented with some raw data contained in a big long string, and you might want to separate the useful items
+out into a more useful form and then do things to them, like display them in a data table. To do this, we can use the split() method. 
+In its simplest form, this takes a single parameter, the character you want to separate the string at, and returns the substrings between
+ the separator as items in an array.
+
+const data = 'Manchester,London,Liverpool,Birmingham,Leeds,Carlisle';
+const cities = data.split(',');
+cities; // ['Manchester', 'London', 'Liverpool', 'Birmingham', 'Leeds', 'Carlisle']
+
+10.You can also go the opposite way using the join() method. 
+const commaSeparated = cities.join(',');
+commaSeparated;// 'Manchester,London,Liverpool,Birmingham,Leeds,Carlisle'
+
+11.Another way of converting an array to a string is to use the toString() method.
+
+const dogNames = ['Rocket','Flash','Bella','Slugger'];
+dogNames.toString(); 

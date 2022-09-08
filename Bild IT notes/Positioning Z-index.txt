@@ -1,0 +1,1 @@
+only elements with position: relative(or absolute, or fixed) pay attention to their z-index property.

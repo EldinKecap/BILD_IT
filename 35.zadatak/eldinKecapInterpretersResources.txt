@@ -1,0 +1,7 @@
+1. https://en.wikipedia.org/wiki/Interpreter_(computing)
+2. https://www.geeksforgeeks.org/introduction-to-interpreters/
+3. https://www.interviewbit.com/blog/difference-between-compiler-and-interpreter/
+4. https://www.techopedia.com/definition/7793/interpreter
+5. https://www.toppr.com/guides/computer-science/computer-fundamentals/system-software/interpreter/
+6. https://www.youtube.com/watch?v=_C5AHaS1mOA
+

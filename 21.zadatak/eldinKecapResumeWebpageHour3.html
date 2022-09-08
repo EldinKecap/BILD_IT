@@ -1,0 +1,262 @@
+<!-- I took some time to make sure everything is responsive and that the mark up is a bit better -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <style>
+
+            body {
+                position: relative;
+                font-family: monospace;
+                background: linear-gradient(90deg,pink,cyan,pink);
+                color: #7e0000;
+            }
+
+            #logo {
+                font-size: 20px;
+                margin-left: 10px;
+                align-self: center;
+                text-align: center;
+                animation-name: logo;
+                animation-duration: 2s;
+                animation-fill-mode: forwards;
+                animation-iteration-count: 1;
+                animation-timing-function: ease-in;
+            }
+
+            #logo:hover {
+                text-decoration: underline;
+            }
+
+            @keyframes logo {
+
+                0% {
+                    font-size: 15px;
+                    opacity: 0;
+                }
+                100% {
+                    opacity: 1;
+                    font-size: 20px;
+                }
+
+            }
+            nav {
+                margin-bottom: 10px;
+                border-style: solid;
+                border-width: 1px;
+                border-radius: 10px;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                width: 100%;
+                height: 35px;
+                background: linear-gradient(75deg,pink,white,cyan);
+                
+            }
+
+            .navigation {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                width: 50%;
+                justify-content: space-evenly;
+                list-style: none;
+                text-align: center;
+            }
+          /*  .heroImage{
+                max-width : 100% ;
+                border-radius: 10px;
+                position: absolute;
+                top: 0;
+                z-index: -1;
+            } */
+           
+            main {
+                display: flex;
+                flex-direction: column;
+                border-style: solid;
+                border-width: 1px;
+                border-radius: 10px;
+                width: 50%;
+                margin: 0px 25%;
+                align-items: center; 
+                text-align: center;
+            }
+
+            .planet{
+                background: linear-gradient(135deg,pink,purple) ;
+                margin-top: 20px;
+                text-align: center;
+                font-weight: 600;
+                font-size: 20px;
+                color: rgba(149, 255, 255, 0.774);
+                align-self: center;
+                width: 100px;
+                height: 100px;
+                padding: 50px;                
+                border-style: solid;
+                border-radius: 50%;
+                border-color: #7e0000;
+                border-width: 1px;
+            }
+
+            .aboutMe {
+                margin-top: 30px;
+            }
+            /*a{
+                color: #7e0000;
+                text-decoration: none;
+            }*/
+
+            li:hover {
+                font-size: 15px;
+                text-decoration: underline;
+            }
+
+            li{
+                list-style: none;
+                align-self: center;
+            }
+
+            section{
+                position: relative;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            #technologies li{
+                position: relative;
+                right: 30%;
+            }
+
+            #educationList li{
+                position: relative;
+                right: 5%;
+            }
+         /*   @media  (max-width : 740px){
+                
+                #educationList li{
+                position: relative;
+                right: 7%;
+                top: 50px;
+            }
+                
+            }*/
+            #personalList {
+                position: relative;
+                right: 8%;
+                left: auto;
+            }
+            #contactMeList {
+                position: relative;
+                right: 10%;
+            }
+            @media (max-width : 425px) {
+                nav {
+                    height: 50px;
+                }
+                .navigation {
+                    width: 75%;
+                }
+                #logo {
+                    font-size: 16px;
+                }
+
+                main {
+                    margin: 0;
+                    width: 100%;
+                }
+            }
+            footer{
+                text-align: center;
+                margin-top: 10px;
+            }
+        </style>
+        <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <title>Eldin Kecap Resume</title>
+                </head>
+                <body>
+                    <header>
+                        <nav>
+                            <p id="logo">Eldin Kecap</p>
+                            <ul class="navigation">
+                                <li>About </li>
+                                <li>Technologies</li>
+                                <li>Contact Me</li>
+                            </ul>
+                        </nav>
+                    <!-- <img src="/bladerunner--movie-scene-wallpaper.jpg" alt="universe pic" class="heroImage">   -->
+                    </header>
+                   
+                    <main>
+                        <div class="planet">
+                            
+                        </div>
+                        <h1>Web developer</h1>
+                        <section id="about">
+                            <h2 class="aboutMe">About Me</h2>
+                            <p class="aboutMe">
+                                My name is Eldin Kecap and I'am a web developer from Tuzla. I love programming and doing sports. If you need a professional 
+                                looking website for your business you have come to the right place. I am a currently studying at IPI academy at Tuzla. This is 
+                                 my final year of collage and I am ready to start working for a company that develops websites.</p>
+                             <h2 class="aboutMe">
+                                     Experience
+                              </h2>
+                               <p class="aboutMe">
+                                 I have experience with working in teams on projects because I worked on 3 skateboarding related projects<br> 
+                                  that included manging a team of people, managing activities, managing our budget and other administration related activities.<br> 
+                                I have built multiple static websites as part of online courses I was taking. One of my strenghts is that I am speak English fluently.<br> 
+                                I am currently studying at IPI academy and looking for ways to expand my knowledge. I am always ready to learn new technologies and adapt to the company enviorment.<br> 
+                                 One important life lesson I carry with me every day is that I will never give up because that is the only way you can fail when you are trying to do something.<br> 
+                                 I love being surrounded by people that all have the same goal in mind and helping them reach it. I hope you accept my job application and we see eachother soon.<br>
+                                   </p>                  
+                                                                                    
+                            
+                        </section>
+            <section id="technologies">
+                    </p>
+                    <h2>Technologies I have experience with</h2>
+                    <ul>
+                     <li>HTML</li>
+                     <li>CSS</li>
+                     <li>JavaScript</li>
+                     <li>C++</li>
+                    </ul>
+                    <h2>Education</h2>
+                    <ul id="educationList">
+                        <li>Gymnasium <em>“Ismet Mujezinovic”</em>  in Tuzla(2017)</li>
+                        <li>International business-information academy (IPIA) in Tuzla(2022)</li>
+                        <li>Driving licence B </li>
+                        <li>IT summer school at Zadar participation certificate</li>
+                        <li>German language A1 Certificate</li>
+                        <li>Fluent in English language</li>
+                    </ul>
+            </section>
+
+  
+    <section id="contactMe">
+   
+                <h2>
+                Personal interests
+                </h2>
+                <ol id="personalList" >
+                <li>Programming</li>
+                <li>Skateboarding</li>
+                <li>Working out</li>
+                </ol>
+                <h2 >Contact information</h2>
+                <ul id="contactMeList">
+                <li>Phone number: +38762191012 </li>
+                <li>Email: eldinkecap@gmail.com</li>
+                <li>LinkedIn: Eldin Kecap </li>
+                </ul>
+    </section>
+ </main>                   
+
+                <footer>
+                        &copy;Eldin Kecap 2022
+                    </footer>    
+                </body>
+</html>

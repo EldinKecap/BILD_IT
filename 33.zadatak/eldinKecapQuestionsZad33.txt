@@ -1,0 +1,11 @@
+javascript.info had a good way of introducing the types of data in JS. The summary was very good and can be used as a 
+reference. The task was a bit too easy. Overall a good experience. On the FCC website first part of coercion was explained very well while in 
+the second one i got lost pretty quickly. I found 2 highlighting mistakes in the text. I feel like the Task on FCC was 
+too hard and I am still confused about some of the solutions. I do like that they posted a lot of different literature on the bottom of the site.
+Overall experience on FCC was hard. Even after re-reading the article multiple times some things just dont seem to stick with me.
+ 
+1. Why do {} change into an [object Object]?
+2. Why is {} called an object ?
+3. What is an  internal [[ToPrimitive]] method ?
+4. What are symbols and how are they used ?
+5. Is it really better to use === operator ?

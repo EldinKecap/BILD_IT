@@ -1,0 +1,12 @@
+1. Why can a const change value in this example ?
+
+var obj = {a: 1, b: 2, c: 3};
+
+for (const prop in obj) {
+  console.log(`obj.${prop} = ${obj[prop]}`);
+}
+
+2. What happens if we make an infinite loop in the JavaScript engine ?
+3. Can we use for in and for of loops inside eachother ?
+4. Why do we have 5 loops if a basic for loop can do it all, is there a performance difference ?
+5. Can labels be used with other flow control keywords ?

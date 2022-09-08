@@ -1,0 +1,7 @@
+
+
+It is also possible to print out the index associated with the index elements using the entries() method.
+// Loop through both index and element
+for (let [index, shark] of sharks.entries()) {
+	console.log(index, shark);
+}

@@ -1,0 +1,32 @@
+According to Bob Martin, what is the disaster upon us?
+Lack of females in the programming industry. Civilization depends on programmers but the world 
+and programmers dont know that yet.
+
+According to Bob Martin, what was the first functional language?
+Lisp is the first functional programming language.
+
+According to Bob Martin, who is Wendy Teller?
+She was Bobs co-worker at the company for which he used to write Cobalt and was related to Edward Teller. 
+
+According to Bob Martin, what was the waterfall era?
+It was a working process for young programmers that lacked discipline that started from 1970 and lasted till 1995.
+
+According to Bob Martin, what are the most important advances since 1945?
+Transistors, first electronic computer (Automatic Computing Engine), Fortran...
+
+According to Bob Martin, what movement has split?
+Agile movement has split into craftmanship (Technical practices) and agile (Business practices) movement.
+
+According to Bob Martin, how many times does your grandmother interact with software?
+A lot of times, at least once when she is buying something at the store.
+
+According to Bob Martin, who are killing people?
+Programmers are killing people.
+
+According to Bob Martin, who rules the world?
+Programmers rule the world.
+
+According to Bob Martin, what do programmers need to do to stave off the worst that government is likely do?
+We have to regulate ourselves by developing principles and ethics. Taking an oath that we will follow those principles and
+make some kind of a regulative body that can make programmers stop being programmers if they are not following those 
+prinicples.

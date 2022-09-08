@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+  
+    <title>Form Submit</title>
+</head>
+<body>
+    <style>
+        input[type],textarea{
+            width: 150px;
+            display: block;
+            margin-bottom: 3px;
+        }
+    </style>
+    
+</body>
+    <form action="submit.php" method="POST">
+        <fieldset>
+            <legend>
+                First Form
+            </legend>
+            <label for="firstform">First label</label>
+            <input type="text" name="firstform" id="firstform">
+            <br>
+            <label for="secondform">Second label</label>
+            <textarea rows="5" cols="40" name="secondform" id="secondform"  ></textarea>
+            <br>
+            <select name="thirdform" id="thirdform">
+                <option value="first">First</option>
+                <option value="second">Second</option>
+                <option value="third">Third</option>
+            </select>
+            <br>
+            <br>
+            <button type="submit" value="Test">Submit</button>
+        </fieldset>
+    </form>
+</html>
