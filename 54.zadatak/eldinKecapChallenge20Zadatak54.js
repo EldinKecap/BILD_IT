@@ -1,3 +1,4 @@
+// Napisati program koji pretvara neki string u Morsov kod(Morse code). See attached Task 20 tablica attachment
 let abeceda = {
     A: 'o-',
     B: '-ooo',

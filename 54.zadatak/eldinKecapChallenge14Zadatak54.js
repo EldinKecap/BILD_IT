@@ -1,3 +1,15 @@
+// Koristiti funkcije u rjesavanju ovog zadatka.
+// Napisati funkciju koja transponuje matricu. Dakle, prvo generisati matricu 3x3 i popuniti nasumicnim brojevima od 0 do 10 a zatim ju ispisati. Sljedeci korak je trasponovanje matrice. Transponovati matricu znaci zamijeniti joj redove i kolone.
+// Primjer:
+// Ukoliko je matrica:
+// 1 2 3
+// 4 5 6
+// 7 8 9
+
+// Transponovana matrica je:
+// 1 4 7
+// 2 5 6
+// 3 6 9
 let mat = [];
 function popuniMat(mat){
     let arr = [];

@@ -1,3 +1,4 @@
+// Napisati funkciju koja validira broj telefona. Funkcija treba da prima string tj broj telefona, a vraca true ili false zavisno od toga da li je broj telefona ispravan. Broj telefona da bi bio ispravan mora biti u jednom od 2 sljedeca formata: 06x/xxx-xxx ili 060/xx-xx-xxx.
 function provjeraBroja(brTelefona) {
     let num = brTelefona.replace(/-/g,'');
     num = num.replace('/','');

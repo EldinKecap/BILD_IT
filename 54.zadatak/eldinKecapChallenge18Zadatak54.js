@@ -1,3 +1,4 @@
+// Napisati funkciju koja provjerava da li cijeli broj ima tacno 3 djelioca, i vraca true ukoliko broj ima tacno 3 djelioca a false u suprotnom. Npr broj 4 ima tacno 3 djelioca: 1, 2 i 4. Zatim ispisati prvih 20 brojeva koji imaju tacno 3 djelioca.
 function hasThreeDividers(num) {
     numOfDiv = 0;
     divider = 0;
