@@ -1,3 +1,7 @@
+// 5. Napisati funkciju koja pronalazi broj pronavljanja određenog karaktera u stringu.
+// Primjer poziva funckije: brojacKaraktera("Dobrodosli", "o")
+// Primjer ispisa: Karakter o se ponavlja 3 puta u stringu "Dobrodosli".
+
 function brojacKaraktera (str,char) {
     let counter = 0 ;
     for (let i = 0; i < str.length; i++) {

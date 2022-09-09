@@ -1,3 +1,7 @@
+// 3.  Palindrome
+// prime je prosti broj koji je također i palindrom. Na primjer, 131 je
+// palindrome prime, kao i brojevi 313 i 757. Napisati metodu koja ispisuje
+// prvih 100 palindrome prime brojeva, 10 brojeva po liniji.
 let palindromePrimeObj = {
     palindromePrimeArr: [],
     fillPalindromePrimeArr: function () {

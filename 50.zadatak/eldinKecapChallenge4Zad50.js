@@ -1,3 +1,9 @@
+// 4.  Napisati funkciju koja
+// broji karaktere u nekom stringu te vraća korisniku isti kao i broj
+// suglasnika i samoglasnika u datom stringu.
+// Primjer poziva funkcije: stringPodaci("Dobrodosli");
+// Primjer ispisa: String "Dobrodosli" se sastoji od 10 karaktera od cega su 4 samoglasnici i 6 suglasnici.
+
 function stringPodaci (str){
     let length = str.length;
     let samoglasnici = 0 ;

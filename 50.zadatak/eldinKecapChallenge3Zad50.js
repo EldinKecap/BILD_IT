@@ -1,3 +1,7 @@
+// 3.  Napisati
+// funkciju koja generiše te ispisuje 100 nasumičnih brojeva, 10 brojeva
+// po liniji. Ispis programa treba da izgleda kao 10x10 matrica nasumičnih
+// brojeva.
 function ispisNasumicnihBrojeva (){
     let arr = [];
     for (let i = 0; i < 10; i++) {

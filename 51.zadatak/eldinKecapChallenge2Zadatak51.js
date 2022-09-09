@@ -1,3 +1,8 @@
+// Twin prime brojevi su par prostih brojeva koji se razlikuju za 2. Na
+// primjer, brojevi 3 i 5 su twin primes, brojevi 5 i 7 i 11 i 13 su
+// također twin primes. Napisati funkciju koja ispisuje sve twin prime
+// brojeve manje od 10.000, 10 parova po liniji. (Ne prvi 10.000 twin prime
+// brojeva, sve twin prime brojeve u rasponu od 0 do 10.000)
 function isPrime(num){
     if(num === 1 || num === 2){
         return true;
