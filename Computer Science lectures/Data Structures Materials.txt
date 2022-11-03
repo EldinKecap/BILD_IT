@@ -1,0 +1,8 @@
+https://github.com/trekhleb/javascript-algorithms
+https://github.com/humanwhocodes/computer-science-in-javascript
+https://yomguithereal.github.io/mnemonist/
+https://www.geeksforgeeks.org/data-structures/
+https://www.w3schools.in/data-structures/intro
+https://www.youtube.com/watch?v=RBSGKlAvoiM
+https://www.mltut.com/best-resources-to-learn-data-structures-and-algorithms/
+https://dev.to/nehasoni__/7-javascript-data-structures-you-must-know-57ah
