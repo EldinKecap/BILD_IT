@@ -1,10 +1,11 @@
-function createPerson(sIdentity) {
-    var oPerson = new Function('console.log(arguments.callee.identity);');
-    oPerson.identity = sIdentity;
-    return oPerson;
+function Person(firstName, lastName) {
+  this.firstName = firstName;
+  this.lastName = lastName;
 }
 
-var john = createPerson('John Smith');
+const member = new Person('john', 'doe');
+Person.getFullName = function() {
+  return `${this.firstName} ${this.lastName}`;
+};
 
-john();
-console.log(john);
+console.log(member.getFullName());

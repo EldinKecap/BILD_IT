@@ -1,0 +1,7 @@
+Task Instructions 
+Create a function mySplice with three parameters arr1, arr2, n.
+Create an arr3 inside the function. Using array method splice copy arr2 into the arr3, in order. 
+Use the array method splice to copy each element of the first array arr1 into the third array arr3, in order. 
+Begin inserting elements at index n of the third array. Make sure the function returns the resulting arr3 array. 
+The input arrays should remain the same after the function runs.
+Find array examples in the acceptance criteria.

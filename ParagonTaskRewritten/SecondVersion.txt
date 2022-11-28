@@ -1,0 +1,6 @@
+Task Instructions 
+Create a function mySplice with three parameters arr1, arr2, n. 
+Use the array method splice to copy each element of the first array arr1 into the second array arr2, in order. 
+Begin inserting elements at index n of the second array. Make sure the function returns the resulting array. 
+The input arrays should remain the same after the function runs.
+Find array examples in the acceptance criteria.
